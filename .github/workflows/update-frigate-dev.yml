@@ -84,10 +84,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add frigate_fa_dev/config.yaml frigate_fa_dev/CHANGELOG.md
-          git commit -m "$(cat <<EOF
-Update Frigate (Full Access) Dev to ${SHORT_SHA}
-
-Track latest Frigate dev branch build on GHCR.
-EOF
-)"
+          git commit -m "Update Frigate (Full Access) Dev to ${SHORT_SHA}" -m "Track latest Frigate dev branch build on GHCR."
           git push
