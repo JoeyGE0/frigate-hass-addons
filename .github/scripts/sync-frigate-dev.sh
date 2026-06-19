@@ -91,4 +91,4 @@ notes_file=$(mktemp)
 } > "${notes_file}"
 
 mv "${notes_file}" "${ADDON_DIR}/CHANGELOG.md"
-echo "${ADDON_DIR}=${target_short}"
+echo "$(basename "${ADDON_DIR}")=${target_short}"

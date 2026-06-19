@@ -10,11 +10,23 @@ permissions:
   contents: write
 
 jobs:
-  sync:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+
+      - name: Run sync script smoke tests
+        run: bash .github/scripts/test-sync-scripts.sh
+
+  sync:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Sync stable and beta add-ons from Frigate releases
         id: releases
@@ -34,6 +46,11 @@ jobs:
             echo "No Frigate release found for beta channel."
             exit 1
           fi
+
+          stable_tag=$(echo "$stable_json" | jq -r '.tag_name')
+          beta_tag=$(echo "$beta_json" | jq -r '.tag_name')
+          echo "stable_tag=${stable_tag}" >> "$GITHUB_OUTPUT"
+          echo "beta_tag=${beta_tag}" >> "$GITHUB_OUTPUT"
 
           chmod +x .github/scripts/sync-frigate-release.sh
 
@@ -59,6 +76,11 @@ jobs:
         run: |
           set -euo pipefail
 
+          dev_head=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev" | jq -r '.sha[:7]')
+          current_dev=$(grep '^version:' frigate_fa_dev/config.yaml | sed -E 's/^version: "?([^"]+)"?/\1/')
+          echo "dev_head=${dev_head}" >> "$GITHUB_OUTPUT"
+          echo "current_dev=${current_dev}" >> "$GITHUB_OUTPUT"
+
           chmod +x .github/scripts/sync-frigate-dev.sh
           mapfile -t updates < <(.github/scripts/sync-frigate-dev.sh frigate_fa_dev)
 
@@ -71,6 +93,7 @@ jobs:
           fi
 
       - name: Commit and push updates
+        id: commit
         run: |
           set -euo pipefail
 
@@ -85,6 +108,7 @@ jobs:
             frigate_fa_dev/config.yaml frigate_fa_dev/CHANGELOG.md
 
           if git diff --cached --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             echo "Nothing to commit."
             exit 0
           fi
@@ -101,4 +125,24 @@ jobs:
           } > /tmp/commit-body.txt
 
           git commit -F /tmp/commit-body.txt -m "$subject"
-          git push
+          git push origin HEAD:main
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Write job summary
+        if: always()
+        run: |
+          {
+            echo "## Frigate add-on sync"
+            echo
+            echo "| Channel | Upstream target | Current dev | Updated |"
+            echo "| --- | --- | --- | --- |"
+            echo "| Stable | \`${{ steps.releases.outputs.stable_tag }}\` | | ${{ steps.releases.outputs.release_updates == 'true' && 'yes' || 'no' }} |"
+            echo "| Beta | \`${{ steps.releases.outputs.beta_tag }}\` | | ${{ steps.releases.outputs.release_updates == 'true' && 'yes' || 'no' }} |"
+            echo "| Dev | \`${{ steps.dev.outputs.dev_head }}\` | \`${{ steps.dev.outputs.current_dev }}\` | ${{ steps.dev.outputs.dev_updates == 'true' && 'yes' || 'no' }} |"
+            echo
+            if [ "${{ steps.commit.outputs.committed || 'false' }}" = "true" ]; then
+              echo "Committed and pushed add-on version bumps to \`main\`."
+            else
+              echo "No repo changes were needed. This is normal when add-ons are already up to date, or when the newest dev commit does not have a GHCR image yet."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

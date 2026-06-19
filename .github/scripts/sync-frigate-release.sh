@@ -48,4 +48,4 @@ notes_file=$(mktemp)
 } > "${notes_file}"
 
 mv "${notes_file}" "${ADDON_DIR}/CHANGELOG.md"
-echo "${ADDON_DIR}=${version}"
+echo "$(basename "${ADDON_DIR}")=${version}"
