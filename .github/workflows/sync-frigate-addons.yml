@@ -8,7 +8,7 @@ on:
   schedule:
     # Daily sync for stable, beta, and dev add-ons.
     - cron: "0 6 * * *"
-  workflow_dispatch:
+  workflow_dispatch: # manual run from Actions tab
 
 permissions:
   contents: write
