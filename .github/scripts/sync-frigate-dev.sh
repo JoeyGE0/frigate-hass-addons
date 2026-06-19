@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sync the dev add-on to the latest Frigate dev branch commit.
+# Sync the dev add-on to the latest Frigate dev branch commit with a published GHCR image.
 set -euo pipefail
 
 ADDON_DIR="${1:?add-on directory required}"
@@ -18,9 +18,27 @@ image_ready() {
 
 current=$(grep '^version:' "${ADDON_DIR}/config.yaml" | sed -E 's/^version: "?([^"]+)"?/\1/')
 
-response=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev")
-target_short=$(echo "$response" | jq -r '.sha[:7]')
-target_full=$(echo "$response" | jq -r '.sha')
+GHCR_TOKEN=$(curl -fsSL \
+  "https://ghcr.io/token?service=ghcr.io&scope=repository:${GHCR_IMAGE}:pull" \
+  | jq -r .token)
+
+commits=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits?sha=dev&per_page=50")
+target_short=""
+target_full=""
+
+while IFS=$'\t' read -r short_sha full_sha; do
+  if image_ready "$short_sha"; then
+    target_short="$short_sha"
+    target_full="$full_sha"
+    break
+  fi
+  echo "Skipping ${short_sha}: GHCR image not published yet." >&2
+done < <(echo "$commits" | jq -r '.[] | "\(.sha[:7])\t\(.sha)"')
+
+if [ -z "$target_short" ]; then
+  echo "No published GHCR image found for recent Frigate dev commits." >&2
+  exit 1
+fi
 
 if [ "$current" = "$target_short" ]; then
   echo "No update needed for ${ADDON_DIR} (already ${target_short})." >&2
@@ -28,10 +46,6 @@ if [ "$current" = "$target_short" ]; then
 fi
 
 echo "Updating ${ADDON_DIR} from ${current} to ${target_short}." >&2
-
-GHCR_TOKEN=$(curl -fsSL \
-  "https://ghcr.io/token?service=ghcr.io&scope=repository:${GHCR_IMAGE}:pull" \
-  | jq -r .token)
 
 target_compare=$(curl -fsSL \
   "https://api.github.com/repos/blakeblackshear/frigate/compare/${current}...${target_full}")
@@ -45,12 +59,7 @@ notes_file=$(mktemp)
   echo
   echo "- Track Frigate dev branch commit [${target_short}](https://github.com/blakeblackshear/frigate/commit/${target_full})"
   echo
-
-  if image_ready "$target_short"; then
-    echo "- GHCR image \`${GHCR_IMAGE}:${target_short}\` is available"
-  else
-    echo "- GHCR image \`${GHCR_IMAGE}:${target_short}\` is not published yet; the add-on may not install until Frigate builds it"
-  fi
+  echo "- GHCR image \`${GHCR_IMAGE}:${target_short}\` is available"
   echo
 
   if [ "$commit_count" -gt 0 ]; then

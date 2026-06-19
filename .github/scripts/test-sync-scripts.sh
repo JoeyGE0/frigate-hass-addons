@@ -42,13 +42,27 @@ fi
 echo "Testing dev sync update path..."
 setup_addon frigate_fa_dev "e84a89e"
 result=$(GHCR_IMAGE=ghcr.io/blakeblackshear/frigate .github/scripts/sync-frigate-dev.sh "$tmpdir/frigate_fa_dev")
-dev_head=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev" | jq -r '.sha[:7]')
-test "$result" = "frigate_fa_dev=${dev_head}"
-grep -q "^version: \"${dev_head}\"$" "$tmpdir/frigate_fa_dev/config.yaml"
-grep -q '#### Changes' "$tmpdir/frigate_fa_dev/CHANGELOG.md"
+GHCR_TOKEN=$(curl -fsSL "https://ghcr.io/token?service=ghcr.io&scope=repository:blakeblackshear/frigate:pull" | jq -r .token)
+dev_target=""
+commits=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits?sha=dev&per_page=50")
+while IFS=$'\t' read -r short_sha _full_sha; do
+  status=$(curl -sI \
+    -H "Authorization: Bearer ${GHCR_TOKEN}" \
+    -H "Accept: application/vnd.oci.image.index.v1+json" \
+    "https://ghcr.io/v2/blakeblackshear/frigate/manifests/${short_sha}" \
+    | head -1)
+  if echo "$status" | grep -q "200"; then
+    dev_target="$short_sha"
+    break
+  fi
+done < <(echo "$commits" | jq -r '.[] | "\(.sha[:7])\t\(.sha)"')
+test -n "$dev_target"
+test "$result" = "frigate_fa_dev=${dev_target}"
+grep -q "^version: \"${dev_target}\"$" "$tmpdir/frigate_fa_dev/config.yaml"
+grep -q 'GHCR image' "$tmpdir/frigate_fa_dev/CHANGELOG.md"
 
 echo "Testing dev sync no-op path..."
-setup_addon frigate_fa_dev "$dev_head"
+setup_addon frigate_fa_dev "$dev_target"
 if GHCR_IMAGE=ghcr.io/blakeblackshear/frigate .github/scripts/sync-frigate-dev.sh "$tmpdir/frigate_fa_dev" >/dev/null; then
   echo "Dev no-op passed."
 else
