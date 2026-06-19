@@ -6,7 +6,7 @@ on:
     paths:
       - ".github/**"
   schedule:
-    # Daily sync for stable, beta, and dev add-ons.
+    # Daily sync for stable, beta, and dev add-ons (06:00 UTC).
     - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
