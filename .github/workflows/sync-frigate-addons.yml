@@ -8,7 +8,12 @@ on:
   schedule:
     # Daily sync for stable, beta, and dev add-ons.
     - cron: "0 6 * * *"
-  workflow_dispatch: # manual run from Actions tab
+  workflow_dispatch:
+    inputs:
+      backfill_releases:
+        description: Create missing GitHub releases for current add-on versions
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,7 +37,17 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Backfill missing GitHub releases
+        if: inputs.backfill_releases == true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          chmod +x .github/scripts/backfill-addon-releases.sh
+          .github/scripts/backfill-addon-releases.sh
+
       - name: Sync stable and beta add-ons from Frigate releases
+        if: inputs.backfill_releases != true
         id: releases
         run: |
           set -euo pipefail
@@ -74,6 +89,7 @@ jobs:
           fi
 
       - name: Sync dev add-on from Frigate dev branch commits
+        if: inputs.backfill_releases != true
         id: dev
         env:
           GHCR_IMAGE: ghcr.io/blakeblackshear/frigate
@@ -97,6 +113,7 @@ jobs:
           fi
 
       - name: Commit and push updates
+        if: inputs.backfill_releases != true
         id: commit
         run: |
           set -euo pipefail
@@ -132,6 +149,22 @@ jobs:
           git push origin HEAD:main
           echo "committed=true" >> "$GITHUB_OUTPUT"
 
+          git diff-tree --no-commit-id --name-only -r HEAD \
+            | awk -F/ '$2 == "config.yaml" { print $1 }' \
+            | sort -u \
+            | paste -sd, - \
+            > /tmp/updated-addons.txt || true
+          echo "updated_addons=$(cat /tmp/updated-addons.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub releases
+        if: steps.commit.outputs.committed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          chmod +x .github/scripts/create-addon-releases.sh
+          .github/scripts/create-addon-releases.sh
+
       - name: Write job summary
         if: always()
         run: |
@@ -146,6 +179,10 @@ jobs:
             echo
             if [ "${{ steps.commit.outputs.committed || 'false' }}" = "true" ]; then
               echo "Committed and pushed add-on version bumps to \`main\`."
+              if [ -n "${{ steps.commit.outputs.updated_addons }}" ]; then
+                echo
+                echo "Created GitHub releases for updated add-ons (tag format: \`{slug}-{version}\`)."
+              fi
             else
               echo "No repo changes were needed. This is normal when add-ons are already up to date, or when the newest dev commit does not have a GHCR image yet."
             fi
