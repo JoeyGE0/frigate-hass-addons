@@ -1,0 +1,104 @@
+name: Sync Frigate Add-ons
+
+on:
+  schedule:
+    # Daily sync for stable, beta, and dev add-ons.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Sync stable and beta add-ons from Frigate releases
+        id: releases
+        run: |
+          set -euo pipefail
+
+          releases=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/releases?per_page=100")
+          stable_json=$(echo "$releases" | jq '[.[] | select(.draft == false and .prerelease == false)][0]')
+          beta_json=$(echo "$releases" | jq '[.[] | select(.draft == false)][0]')
+
+          if [ "$stable_json" = "null" ] || [ -z "$stable_json" ]; then
+            echo "No stable Frigate release found."
+            exit 1
+          fi
+
+          if [ "$beta_json" = "null" ] || [ -z "$beta_json" ]; then
+            echo "No Frigate release found for beta channel."
+            exit 1
+          fi
+
+          chmod +x .github/scripts/sync-frigate-release.sh
+
+          mapfile -t updates < <(
+            .github/scripts/sync-frigate-release.sh frigate "$stable_json"
+            .github/scripts/sync-frigate-release.sh frigate_fa "$stable_json"
+            .github/scripts/sync-frigate-release.sh frigate_beta "$beta_json"
+            .github/scripts/sync-frigate-release.sh frigate_fa_beta "$beta_json"
+          )
+
+          if [ "${#updates[@]}" -eq 0 ]; then
+            echo "release_updates=false" >> "$GITHUB_OUTPUT"
+            echo "No stable or beta add-on updates needed."
+          else
+            echo "release_updates=true" >> "$GITHUB_OUTPUT"
+            printf '%s\n' "${updates[@]}"
+          fi
+
+      - name: Sync dev add-on from Frigate dev branch commits
+        id: dev
+        env:
+          GHCR_IMAGE: ghcr.io/blakeblackshear/frigate
+        run: |
+          set -euo pipefail
+
+          chmod +x .github/scripts/sync-frigate-dev.sh
+          mapfile -t updates < <(.github/scripts/sync-frigate-dev.sh frigate_fa_dev)
+
+          if [ "${#updates[@]}" -eq 0 ]; then
+            echo "dev_updates=false" >> "$GITHUB_OUTPUT"
+            echo "No dev add-on update needed."
+          else
+            echo "dev_updates=true" >> "$GITHUB_OUTPUT"
+            printf '%s\n' "${updates[@]}"
+          fi
+
+      - name: Commit and push updates
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            frigate/config.yaml frigate/CHANGELOG.md \
+            frigate_fa/config.yaml frigate_fa/CHANGELOG.md \
+            frigate_beta/config.yaml frigate_beta/CHANGELOG.md \
+            frigate_fa_beta/config.yaml frigate_fa_beta/CHANGELOG.md \
+            frigate_fa_dev/config.yaml frigate_fa_dev/CHANGELOG.md
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+
+          subject="Sync Frigate add-ons"
+          {
+            echo "Automated sync from upstream Frigate releases and dev branch commits."
+            echo
+            git diff --cached --name-only | while read -r file; do
+              addon=$(echo "$file" | cut -d/ -f1)
+              version=$(grep '^version:' "$addon/config.yaml" | sed -E 's/^version: "?([^"]+)"?/\1/')
+              echo "- ${addon}: ${version}"
+            done
+          } > /tmp/commit-body.txt
+
+          git commit -F /tmp/commit-body.txt -m "$subject"
+          git push
