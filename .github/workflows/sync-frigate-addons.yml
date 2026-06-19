@@ -186,6 +186,6 @@ jobs:
                 echo "Created GitHub releases for updated add-ons (tag format: \`{slug}-{version}\`)."
               fi
             else
-              echo "No repo changes were needed. This is normal when add-ons are already up to date, or when the newest dev commit does not have a GHCR image yet."
+              echo "No repo changes were needed. This is normal when add-ons are already up to date, or when the latest published dev GHCR image is already tracked."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
