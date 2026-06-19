@@ -61,7 +61,7 @@ for addon in "${addons[@]}"; do
   } > "$notes_file"
 
   prerelease_flag=()
-  if [[ "$version" =~ [Bb]eta|[Rr][Cc] ]]; then
+  if [[ "$version" =~ [Bb]eta|[Rr][Cc] ]] || [[ "$slug" == *"-dev"* ]]; then
     prerelease_flag=(--prerelease)
   fi
 

@@ -42,13 +42,13 @@ fi
 echo "Testing dev sync update path..."
 setup_addon frigate_fa_dev "e84a89e"
 result=$(GHCR_IMAGE=ghcr.io/blakeblackshear/frigate .github/scripts/sync-frigate-dev.sh "$tmpdir/frigate_fa_dev")
-test "$result" = "frigate_fa_dev=8203e39"
-grep -q '^version: "8203e39"$' "$tmpdir/frigate_fa_dev/config.yaml"
-grep -q '#### Changes (4 commit(s))' "$tmpdir/frigate_fa_dev/CHANGELOG.md"
-grep -q 'UI tweaks (#23492)' "$tmpdir/frigate_fa_dev/CHANGELOG.md"
+dev_head=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev" | jq -r '.sha[:7]')
+test "$result" = "frigate_fa_dev=${dev_head}"
+grep -q "^version: \"${dev_head}\"$" "$tmpdir/frigate_fa_dev/config.yaml"
+grep -q '#### Changes' "$tmpdir/frigate_fa_dev/CHANGELOG.md"
 
 echo "Testing dev sync no-op path..."
-setup_addon frigate_fa_dev "8203e39"
+setup_addon frigate_fa_dev "$dev_head"
 if GHCR_IMAGE=ghcr.io/blakeblackshear/frigate .github/scripts/sync-frigate-dev.sh "$tmpdir/frigate_fa_dev" >/dev/null; then
   echo "Dev no-op passed."
 else

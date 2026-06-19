@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sync the dev add-on to the latest Frigate dev branch commit with a GHCR image.
+# Sync the dev add-on to the latest Frigate dev branch commit.
 set -euo pipefail
 
 ADDON_DIR="${1:?add-on directory required}"
@@ -19,40 +19,8 @@ image_ready() {
 current=$(grep '^version:' "${ADDON_DIR}/config.yaml" | sed -E 's/^version: "?([^"]+)"?/\1/')
 
 response=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev")
-dev_head_short=$(echo "$response" | jq -r '.sha[:7]')
-dev_head_full=$(echo "$response" | jq -r '.sha')
-
-if [ "$current" = "$dev_head_short" ]; then
-  echo "No update needed for ${ADDON_DIR} (already ${dev_head_short})." >&2
-  exit 0
-fi
-
-GHCR_TOKEN=$(curl -fsSL \
-  "https://ghcr.io/token?service=ghcr.io&scope=repository:${GHCR_IMAGE}:pull" \
-  | jq -r .token)
-
-compare=$(curl -fsSL \
-  "https://api.github.com/repos/blakeblackshear/frigate/compare/${current}...${dev_head_full}")
-
-target_full=""
-target_short=""
-while IFS=$'\t' read -r full short; do
-  if image_ready "$short"; then
-    target_full="$full"
-    target_short="$short"
-    break
-  fi
-done < <(echo "$compare" | jq -r '.commits | reverse | .[] | "\(.sha)\t\(.sha[:7])"')
-
-if [ -z "$target_short" ]; then
-  if image_ready "$dev_head_short"; then
-    target_full="$dev_head_full"
-    target_short="$dev_head_short"
-  else
-    echo "No new dev commits with a ready GHCR image found after ${current}." >&2
-    exit 0
-  fi
-fi
+target_short=$(echo "$response" | jq -r '.sha[:7]')
+target_full=$(echo "$response" | jq -r '.sha')
 
 if [ "$current" = "$target_short" ]; then
   echo "No update needed for ${ADDON_DIR} (already ${target_short})." >&2
@@ -60,6 +28,10 @@ if [ "$current" = "$target_short" ]; then
 fi
 
 echo "Updating ${ADDON_DIR} from ${current} to ${target_short}." >&2
+
+GHCR_TOKEN=$(curl -fsSL \
+  "https://ghcr.io/token?service=ghcr.io&scope=repository:${GHCR_IMAGE}:pull" \
+  | jq -r .token)
 
 target_compare=$(curl -fsSL \
   "https://api.github.com/repos/blakeblackshear/frigate/compare/${current}...${target_full}")
@@ -72,6 +44,13 @@ notes_file=$(mktemp)
   echo "### ${target_short}"
   echo
   echo "- Track Frigate dev branch commit [${target_short}](https://github.com/blakeblackshear/frigate/commit/${target_full})"
+  echo
+
+  if image_ready "$target_short"; then
+    echo "- GHCR image \`${GHCR_IMAGE}:${target_short}\` is available"
+  else
+    echo "- GHCR image \`${GHCR_IMAGE}:${target_short}\` is not published yet; the add-on may not install until Frigate builds it"
+  fi
   echo
 
   if [ "$commit_count" -gt 0 ]; then
