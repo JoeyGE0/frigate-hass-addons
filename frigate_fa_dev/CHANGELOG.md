@@ -1,3 +1,13 @@
+### d036061
+
+- Track Frigate dev branch commit [d036061](https://github.com/blakeblackshear/frigate/commit/d036061e3f6b96b9adf6e4cf60b6ebc723395c11)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:d036061` is available
+
+#### Changes (1 commit(s))
+
+- cache the preview_frames directory listing so concurrent per-camera frame requests share one scan instead of each re-listing the whole directory (#23526) ([d036061](https://github.com/blakeblackshear/frigate/commit/d036061e3f6b96b9adf6e4cf60b6ebc723395c11))
+
 ### 5003ab8
 
 - Track Frigate dev branch commit [5003ab8](https://github.com/blakeblackshear/frigate/commit/5003ab895c9802bc5c292da665eab7132b7f5eba)
