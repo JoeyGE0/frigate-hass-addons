@@ -1,3 +1,13 @@
+### d982b3a
+
+- Track Frigate dev branch commit [d982b3a](https://github.com/blakeblackshear/frigate/commit/d982b3a782608bbf805cb2e2b45b27ba6bf6c318)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:d982b3a` is available
+
+#### Changes (1 commit(s))
+
+- perf(util): use monotonic clock and bounded deque in EventsPerSecond (#23520) ([d982b3a](https://github.com/blakeblackshear/frigate/commit/d982b3a782608bbf805cb2e2b45b27ba6bf6c318))
+
 ### d036061
 
 - Track Frigate dev branch commit [d036061](https://github.com/blakeblackshear/frigate/commit/d036061e3f6b96b9adf6e4cf60b6ebc723395c11)
