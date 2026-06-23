@@ -1,3 +1,15 @@
+### f065cc8
+
+- Track Frigate dev branch commit [f065cc8](https://github.com/blakeblackshear/frigate/commit/f065cc8642ed35fb47bf3d1602811d922a8ec4ec)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:f065cc8` is available
+
+#### Changes (3 commit(s))
+
+- docs: correct face_recognition min_area default to 750 (#23535) ([bb5056a](https://github.com/blakeblackshear/frigate/commit/bb5056a68af5b68633c2b1f7bdac25beeb425841))
+- Improve storage docs (#23542) ([9ce80e7](https://github.com/blakeblackshear/frigate/commit/9ce80e7266899e470e9d5f5e177ab37bbbfab619))
+- fix unbounded recordings_info growth for cameras with no cache segments (#23528) ([f065cc8](https://github.com/blakeblackshear/frigate/commit/f065cc8642ed35fb47bf3d1602811d922a8ec4ec))
+
 ### d982b3a
 
 - Track Frigate dev branch commit [d982b3a](https://github.com/blakeblackshear/frigate/commit/d982b3a782608bbf805cb2e2b45b27ba6bf6c318)
