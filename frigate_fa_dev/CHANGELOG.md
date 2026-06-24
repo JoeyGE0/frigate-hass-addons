@@ -1,3 +1,15 @@
+### ec3fb00
+
+- Track Frigate dev branch commit [ec3fb00](https://github.com/blakeblackshear/frigate/commit/ec3fb00494d3fa17231068002b56def82cf95530)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:ec3fb00` is available
+
+#### Changes (3 commit(s))
+
+- perf(util): cut redundant work in per-frame detection consolidation (#23522) ([a2b46f5](https://github.com/blakeblackshear/frigate/commit/a2b46f5d84fcc97dbc45c347a27ace55ff178e35))
+- perf(track): avoid per-frame allocations and list lookups in tracker (#23523) ([081d6f9](https://github.com/blakeblackshear/frigate/commit/081d6f95ef4ac7257a051a0ab9f263d8e212ddf1))
+- perf(track): use sum()/len() instead of np.mean in average_boxes (#23521) ([ec3fb00](https://github.com/blakeblackshear/frigate/commit/ec3fb00494d3fa17231068002b56def82cf95530))
+
 ### f065cc8
 
 - Track Frigate dev branch commit [f065cc8](https://github.com/blakeblackshear/frigate/commit/f065cc8642ed35fb47bf3d1602811d922a8ec4ec)
