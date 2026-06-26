@@ -1,3 +1,13 @@
+### cbf6d03
+
+- Track Frigate dev branch commit [cbf6d03](https://github.com/blakeblackshear/frigate/commit/cbf6d032cb6c93d614976c5d5a18701b127a6668)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:cbf6d03` is available
+
+#### Changes (1 commit(s))
+
+- Add optional docs link to config field messages (#23569) ([cbf6d03](https://github.com/blakeblackshear/frigate/commit/cbf6d032cb6c93d614976c5d5a18701b127a6668))
+
 ### ec3fb00
 
 - Track Frigate dev branch commit [ec3fb00](https://github.com/blakeblackshear/frigate/commit/ec3fb00494d3fa17231068002b56def82cf95530)
