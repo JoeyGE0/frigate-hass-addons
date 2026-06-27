@@ -1,3 +1,14 @@
+### 1ec511b
+
+- Track Frigate dev branch commit [1ec511b](https://github.com/blakeblackshear/frigate/commit/1ec511b66cae745bc22c09f481475947ba9c5085)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:1ec511b` is available
+
+#### Changes (2 commit(s))
+
+- Rebuild object docs (#23570) ([accbab7](https://github.com/blakeblackshear/frigate/commit/accbab7afce342c6daed884659ccbb48d0cd5f98))
+- Docs tweaks (#23572) ([1ec511b](https://github.com/blakeblackshear/frigate/commit/1ec511b66cae745bc22c09f481475947ba9c5085))
+
 ### cbf6d03
 
 - Track Frigate dev branch commit [cbf6d03](https://github.com/blakeblackshear/frigate/commit/cbf6d032cb6c93d614976c5d5a18701b127a6668)
