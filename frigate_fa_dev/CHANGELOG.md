@@ -1,3 +1,13 @@
+### e2ce0c8
+
+- Track Frigate dev branch commit [e2ce0c8](https://github.com/blakeblackshear/frigate/commit/e2ce0c82ff1c7e3626e705d36c4add85ec89939f)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:e2ce0c8` is available
+
+#### Changes (1 commit(s))
+
+- show Frigate+ submission failures in the UI instead of showing a false success (#23579) ([e2ce0c8](https://github.com/blakeblackshear/frigate/commit/e2ce0c82ff1c7e3626e705d36c4add85ec89939f))
+
 ### 1ec511b
 
 - Track Frigate dev branch commit [1ec511b](https://github.com/blakeblackshear/frigate/commit/1ec511b66cae745bc22c09f481475947ba9c5085)
