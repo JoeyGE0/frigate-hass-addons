@@ -1,3 +1,9 @@
+### 90761a5
+
+- Temporary debug build for [stale live-view overlays #23600](https://github.com/blakeblackshear/frigate/discussions/23600)
+- Image: `ghcr.io/hawkeye217/frigate:90761a5` (hawkeye217 stale-debug logging)
+- Revert to `ghcr.io/blakeblackshear/frigate` dev when done testing
+
 ### e2ce0c8
 
 - Track Frigate dev branch commit [e2ce0c8](https://github.com/blakeblackshear/frigate/commit/e2ce0c82ff1c7e3626e705d36c4add85ec89939f)
