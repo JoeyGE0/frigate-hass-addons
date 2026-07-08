@@ -23,15 +23,17 @@ setup_addon() {
 echo "Testing release sync update path..."
 releases=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/releases?per_page=5")
 stable_json=$(echo "$releases" | jq '[.[] | select(.draft == false and .prerelease == false)][0]')
-setup_addon frigate "0.17.0"
+stable_tag=$(echo "$stable_json" | jq -r '.tag_name' | sed 's/^v//')
+previous_stable_tag=$(echo "$releases" | jq -r '[.[] | select(.draft == false and .prerelease == false)][1].tag_name' | sed 's/^v//')
+setup_addon frigate "$previous_stable_tag"
 result=$(.github/scripts/sync-frigate-release.sh "$tmpdir/frigate" "$stable_json")
-test "$result" = "frigate=0.17.1"
-grep -q '^version: 0.17.1$' "$tmpdir/frigate/config.yaml"
-grep -q '### 0.17.1' "$tmpdir/frigate/CHANGELOG.md"
+test "$result" = "frigate=${stable_tag}"
+grep -q "^version: ${stable_tag}$" "$tmpdir/frigate/config.yaml"
+grep -q "### ${stable_tag}" "$tmpdir/frigate/CHANGELOG.md"
 grep -q "What's Changed" "$tmpdir/frigate/CHANGELOG.md"
 
 echo "Testing release sync no-op path..."
-setup_addon frigate "0.17.1"
+setup_addon frigate "$stable_tag"
 if .github/scripts/sync-frigate-release.sh "$tmpdir/frigate" "$stable_json" >/dev/null; then
   echo "Release no-op passed."
 else

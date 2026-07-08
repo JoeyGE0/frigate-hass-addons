@@ -1,11 +1,11 @@
 name: Frigate (Full Access) Dev
-version: "90761a5"
+version: "20c2be4"
 panel_icon: "mdi:cctv"
 panel_title: Frigate
 slug: frigate-fa-dev
-description: NVR with realtime local object detection for IP cameras (hawkeye217 stale-overlay debug build)
-url: "https://github.com/blakeblackshear/frigate/discussions/23600"
-image: ghcr.io/hawkeye217/frigate
+description: NVR with realtime local object detection for IP cameras (dev branch builds)
+url: "https://github.com/blakeblackshear/frigate/tree/dev"
+image: ghcr.io/blakeblackshear/frigate
 startup: application
 boot: auto
 init: false
