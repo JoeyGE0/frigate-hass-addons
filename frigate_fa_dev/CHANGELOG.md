@@ -1,3 +1,14 @@
+### f3c09ae
+
+- Track Frigate dev branch commit [f3c09ae](https://github.com/blakeblackshear/frigate/commit/f3c09ae169473d34cacfc747d4218e037261c51a)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:f3c09ae` is available
+
+#### Changes (2 commit(s))
+
+- Miscellaneous fixes (#23661) ([f6596ac](https://github.com/blakeblackshear/frigate/commit/f6596ac7b0a75541631c127289195c139f84df96))
+- Typo fixes (#23669) ([f3c09ae](https://github.com/blakeblackshear/frigate/commit/f3c09ae169473d34cacfc747d4218e037261c51a))
+
 ### 20c2be4
 
 - Track Frigate dev branch commit [20c2be4](https://github.com/blakeblackshear/frigate/commit/20c2be43686ac559b6634802780acecbd82f564a)
