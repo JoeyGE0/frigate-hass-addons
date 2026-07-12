@@ -1,3 +1,13 @@
+### da4037e
+
+- Track Frigate dev branch commit [da4037e](https://github.com/blakeblackshear/frigate/commit/da4037eb52ef81676ef8eaa8867480330bbe93bb)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:da4037e` is available
+
+#### Changes (1 commit(s))
+
+- UI tweaks (#23679) ([da4037e](https://github.com/blakeblackshear/frigate/commit/da4037eb52ef81676ef8eaa8867480330bbe93bb))
+
 ### f3c09ae
 
 - Track Frigate dev branch commit [f3c09ae](https://github.com/blakeblackshear/frigate/commit/f3c09ae169473d34cacfc747d4218e037261c51a)
