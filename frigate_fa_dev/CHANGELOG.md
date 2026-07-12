@@ -1,3 +1,13 @@
+### 5f6043a
+
+- Track Frigate dev branch commit [5f6043a](https://github.com/blakeblackshear/frigate/commit/5f6043aa92ae9033203c415a762aed02de3b26c3)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:5f6043a` is available
+
+#### Changes (1 commit(s))
+
+- Fix enabled flag for custom classification models (#23681) ([5f6043a](https://github.com/blakeblackshear/frigate/commit/5f6043aa92ae9033203c415a762aed02de3b26c3))
+
 ### da4037e
 
 - Track Frigate dev branch commit [da4037e](https://github.com/blakeblackshear/frigate/commit/da4037eb52ef81676ef8eaa8867480330bbe93bb)
