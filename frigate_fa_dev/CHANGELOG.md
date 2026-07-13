@@ -1,3 +1,14 @@
+### 65af0b1
+
+- Track Frigate dev branch commit [65af0b1](https://github.com/blakeblackshear/frigate/commit/65af0b1351e3889c802cc65ba725d7187c72e622)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:65af0b1` is available
+
+#### Changes (2 commit(s))
+
+- UI improvements and fixes (#23690) ([fcd05ec](https://github.com/blakeblackshear/frigate/commit/fcd05ec7bc5c9425e7d69c314d8d50feb6b494e1))
+- GenAI Fixes (#23708) ([65af0b1](https://github.com/blakeblackshear/frigate/commit/65af0b1351e3889c802cc65ba725d7187c72e622))
+
 ### 5f6043a
 
 - Track Frigate dev branch commit [5f6043a](https://github.com/blakeblackshear/frigate/commit/5f6043aa92ae9033203c415a762aed02de3b26c3)
