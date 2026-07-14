@@ -1,3 +1,13 @@
+### 775ce22
+
+- Track Frigate dev branch commit [775ce22](https://github.com/blakeblackshear/frigate/commit/775ce22204655b1eb77837d08b0e4ba7fd98f031)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:775ce22` is available
+
+#### Changes (1 commit(s))
+
+- Miscellaneous Fixes (#23709) ([775ce22](https://github.com/blakeblackshear/frigate/commit/775ce22204655b1eb77837d08b0e4ba7fd98f031))
+
 ### 6f24f5a
 
 - Track Frigate dev branch commit [6f24f5a](https://github.com/blakeblackshear/frigate/commit/6f24f5a595e61541d129f114eb30b244c6563d82)

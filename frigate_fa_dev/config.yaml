@@ -1,5 +1,5 @@
 name: Frigate (Full Access) Dev
-version: "6f24f5a"
+version: "775ce22"
 panel_icon: "mdi:cctv"
 panel_title: Frigate
 slug: frigate-fa-dev
