@@ -2,6 +2,13 @@
 
 Unofficial fork of [blakeblackshear/frigate-hass-addons](https://github.com/blakeblackshear/frigate-hass-addons) with a **Frigate (Full Access) Dev** add-on that pulls commit-pinned images from the Frigate `dev` branch.
 
+
+## Custom go2rtc (ISAPI AAC talk)
+
+**Frigate (Full Access) Dev** on this fork builds from the pinned Frigate image and overlays [JoeyGE0/go2rtc](https://github.com/JoeyGE0/go2rtc) (AAC ISAPI two-way talk). Versions look like `81b53b7-aac1`.
+
+Add `isapi://user:pass@camera-ip:80/` under the matching `go2rtc.streams` entry in Frigate config to use talk.
+
 ## Installing
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FJoeyGE0%2Ffrigate-hass-addons)

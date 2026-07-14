@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # Sync the dev add-on to the latest Frigate dev branch commit.
+# JoeyGE0 fork: keep Dockerfile go2rtc overlay; versions are "{sha}-aac1".
 set -euo pipefail
 
 ADDON_DIR="${1:?add-on directory required}"
 GHCR_IMAGE="${GHCR_IMAGE:-ghcr.io/blakeblackshear/frigate}"
+AAC_SUFFIX="-aac1"
 
 image_ready() {
   local short_sha="$1"
@@ -16,18 +18,20 @@ image_ready() {
   echo "$status" | grep -q "200"
 }
 
-current=$(grep '^version:' "${ADDON_DIR}/config.yaml" | sed -E 's/^version: "?([^"]+)"?/\1/')
+raw_version=$(grep '^version:' "${ADDON_DIR}/config.yaml" | sed -E 's/^version: "?([^"]+)"?/\1/')
+# Strip optional -aac* suffix for Frigate compare API
+current="${raw_version%%-aac*}"
 
 response=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev")
 target_short=$(echo "$response" | jq -r '.sha[:7]')
 target_full=$(echo "$response" | jq -r '.sha')
 
 if [ "$current" = "$target_short" ]; then
-  echo "No update needed for ${ADDON_DIR} (already ${target_short})." >&2
+  echo "No update needed for ${ADDON_DIR} (already ${target_short}${AAC_SUFFIX})." >&2
   exit 0
 fi
 
-echo "Updating ${ADDON_DIR} from ${current} to ${target_short}." >&2
+echo "Updating ${ADDON_DIR} from ${raw_version} to ${target_short}${AAC_SUFFIX}." >&2
 
 GHCR_TOKEN=$(curl -fsSL \
   "https://ghcr.io/token?service=ghcr.io&scope=repository:${GHCR_IMAGE}:pull" \
@@ -37,13 +41,19 @@ target_compare=$(curl -fsSL \
   "https://api.github.com/repos/blakeblackshear/frigate/compare/${current}...${target_full}")
 commit_count=$(echo "$target_compare" | jq -r '.total_commits // 0')
 
-sed -i "s/^version: .*/version: \"${target_short}\"/" "${ADDON_DIR}/config.yaml"
+sed -i "s/^version: .*/version: \"${target_short}${AAC_SUFFIX}\"/" "${ADDON_DIR}/config.yaml"
+
+# Keep go2rtc overlay build_from in sync with Frigate tag
+if [ -f "${ADDON_DIR}/build.yaml" ]; then
+  sed -i -E "s|(ghcr.io/blakeblackshear/frigate:)[a-z0-9]+|\\1${target_short}|g" "${ADDON_DIR}/build.yaml"
+fi
 
 notes_file=$(mktemp)
 {
-  echo "### ${target_short}"
+  echo "### ${target_short}${AAC_SUFFIX}"
   echo
   echo "- Track Frigate dev branch commit [${target_short}](https://github.com/blakeblackshear/frigate/commit/${target_full})"
+  echo "- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile"
   echo
 
   if image_ready "$target_short"; then
@@ -61,7 +71,7 @@ notes_file=$(mktemp)
   fi
 
   if [ -f "${ADDON_DIR}/CHANGELOG.md" ]; then
-    awk -v version="### ${target_short}" '
+    awk -v version="### ${target_short}${AAC_SUFFIX}" '
       $0 == version { skip = 1; next }
       skip && /^### / { skip = 0 }
       !skip { print }
@@ -70,4 +80,10 @@ notes_file=$(mktemp)
 } > "${notes_file}"
 
 mv "${notes_file}" "${ADDON_DIR}/CHANGELOG.md"
-echo "$(basename "${ADDON_DIR}")=${target_short}"
+
+# Also commit build.yaml when present
+if [ -f "${ADDON_DIR}/build.yaml" ]; then
+  echo "$(basename "${ADDON_DIR}")=${target_short}${AAC_SUFFIX}"
+else
+  echo "$(basename "${ADDON_DIR}")=${target_short}${AAC_SUFFIX}"
+fi

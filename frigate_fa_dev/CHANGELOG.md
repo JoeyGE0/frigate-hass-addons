@@ -1,3 +1,8 @@
+### 81b53b7-aac1
+
+- **Custom go2rtc:** builds from Frigate `81b53b7` and replaces embedded go2rtc with [JoeyGE0/go2rtc `isapi-aac-ea0238a`](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-ea0238a) (Hikvision ISAPI AAC talk)
+- Normal Dev add-on updates from this repo (`main`) now use the AAC build — add `isapi://` under go2rtc streams to test talk
+
 ### 81b53b7
 
 - Track Frigate dev branch commit [81b53b7](https://github.com/blakeblackshear/frigate/commit/81b53b78356577ef6f5b075123aebfdf2e1f8ffb)

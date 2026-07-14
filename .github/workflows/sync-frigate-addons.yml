@@ -126,7 +126,7 @@ jobs:
             frigate_fa/config.yaml frigate_fa/CHANGELOG.md \
             frigate_beta/config.yaml frigate_beta/CHANGELOG.md \
             frigate_fa_beta/config.yaml frigate_fa_beta/CHANGELOG.md \
-            frigate_fa_dev/config.yaml frigate_fa_dev/CHANGELOG.md
+            frigate_fa_dev/config.yaml frigate_fa_dev/CHANGELOG.md frigate_fa_dev/build.yaml frigate_fa_dev/Dockerfile
 
           if git diff --cached --quiet; then
             echo "committed=false" >> "$GITHUB_OUTPUT"
