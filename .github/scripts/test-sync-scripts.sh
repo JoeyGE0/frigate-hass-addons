@@ -17,7 +17,7 @@ setup_addon() {
   mkdir -p "$tmpdir/$addon"
   cp "$addon/config.yaml" "$tmpdir/$addon/config.yaml"
   cp "$addon/CHANGELOG.md" "$tmpdir/$addon/CHANGELOG.md"
-  sed -i "s/^version: .*/version: \"${version}\"/" "$tmpdir/$addon/config.yaml"
+  perl -i -pe "s/^version: .*/version: \"${version}\"/" "$tmpdir/$addon/config.yaml"
 }
 
 echo "Testing release sync update path..."
@@ -43,14 +43,22 @@ fi
 
 echo "Testing dev sync update path..."
 setup_addon frigate_fa_dev "e84a89e"
+# copy overlay build.yaml so sync can bump Frigate tags (JoeyGE0 custom go2rtc)
+if [ -f frigate_fa_dev/build.yaml ]; then
+  cp frigate_fa_dev/build.yaml "$tmpdir/frigate_fa_dev/build.yaml"
+fi
 result=$(GHCR_IMAGE=ghcr.io/blakeblackshear/frigate .github/scripts/sync-frigate-dev.sh "$tmpdir/frigate_fa_dev")
 dev_head=$(curl -fsSL "https://api.github.com/repos/blakeblackshear/frigate/commits/dev" | jq -r '.sha[:7]')
-test "$result" = "frigate_fa_dev=${dev_head}"
-grep -q "^version: \"${dev_head}\"$" "$tmpdir/frigate_fa_dev/config.yaml"
+# JoeyGE0 fork keeps -aac1 so HA rebuilds with custom go2rtc overlay
+test "$result" = "frigate_fa_dev=${dev_head}-aac1"
+grep -q "^version: \"${dev_head}-aac1\"$" "$tmpdir/frigate_fa_dev/config.yaml"
 grep -q '#### Changes' "$tmpdir/frigate_fa_dev/CHANGELOG.md"
+if [ -f "$tmpdir/frigate_fa_dev/build.yaml" ]; then
+  grep -q "frigate:${dev_head}" "$tmpdir/frigate_fa_dev/build.yaml"
+fi
 
 echo "Testing dev sync no-op path..."
-setup_addon frigate_fa_dev "$dev_head"
+setup_addon frigate_fa_dev "${dev_head}-aac1"
 if GHCR_IMAGE=ghcr.io/blakeblackshear/frigate .github/scripts/sync-frigate-dev.sh "$tmpdir/frigate_fa_dev" >/dev/null; then
   echo "Dev no-op passed."
 else

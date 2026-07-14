@@ -41,11 +41,12 @@ target_compare=$(curl -fsSL \
   "https://api.github.com/repos/blakeblackshear/frigate/compare/${current}...${target_full}")
 commit_count=$(echo "$target_compare" | jq -r '.total_commits // 0')
 
-sed -i "s/^version: .*/version: \"${target_short}${AAC_SUFFIX}\"/" "${ADDON_DIR}/config.yaml"
+# Portable in-place edits (GNU/BSD)
+perl -i -pe "s/^version: .*/version: \"${target_short}${AAC_SUFFIX}\"/" "${ADDON_DIR}/config.yaml"
 
 # Keep go2rtc overlay build_from in sync with Frigate tag
 if [ -f "${ADDON_DIR}/build.yaml" ]; then
-  sed -i -E "s|(ghcr.io/blakeblackshear/frigate:)[a-z0-9]+|\\1${target_short}|g" "${ADDON_DIR}/build.yaml"
+  perl -i -pe "s|(ghcr.io/blakeblackshear/frigate:)[a-z0-9]+|\${1}${target_short}|g" "${ADDON_DIR}/build.yaml"
 fi
 
 notes_file=$(mktemp)
