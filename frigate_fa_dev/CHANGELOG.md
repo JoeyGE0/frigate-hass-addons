@@ -1,3 +1,13 @@
+### 6f24f5a
+
+- Track Frigate dev branch commit [6f24f5a](https://github.com/blakeblackshear/frigate/commit/6f24f5a595e61541d129f114eb30b244c6563d82)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:6f24f5a` is available
+
+#### Changes (1 commit(s))
+
+- Convert face crops to RGB before embedding (#23712) ([6f24f5a](https://github.com/blakeblackshear/frigate/commit/6f24f5a595e61541d129f114eb30b244c6563d82))
+
 ### 65af0b1
 
 - Track Frigate dev branch commit [65af0b1](https://github.com/blakeblackshear/frigate/commit/65af0b1351e3889c802cc65ba725d7187c72e622)
