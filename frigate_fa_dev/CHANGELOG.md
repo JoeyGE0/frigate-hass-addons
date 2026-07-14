@@ -1,3 +1,14 @@
+### c2e739b
+
+- Track Frigate dev branch commit [c2e739b](https://github.com/blakeblackshear/frigate/commit/c2e739b4bc75d848efaa7cb34c604f54282d3a8a)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:c2e739b` is available
+
+#### Changes (2 commit(s))
+
+- Add logout endpoint to Nginx configuration to prevent a new token on logout (#23678) ([62d4e87](https://github.com/blakeblackshear/frigate/commit/62d4e87e5d9b580c88790f18c1babf2017d31fb7))
+- bound REGEXP evaluation with a timeout to prevent ReDoS on the database thread (#23714) ([c2e739b](https://github.com/blakeblackshear/frigate/commit/c2e739b4bc75d848efaa7cb34c604f54282d3a8a))
+
 ### 775ce22
 
 - Track Frigate dev branch commit [775ce22](https://github.com/blakeblackshear/frigate/commit/775ce22204655b1eb77837d08b0e4ba7fd98f031)
