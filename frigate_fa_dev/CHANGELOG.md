@@ -1,3 +1,13 @@
+### 81b53b7
+
+- Track Frigate dev branch commit [81b53b7](https://github.com/blakeblackshear/frigate/commit/81b53b78356577ef6f5b075123aebfdf2e1f8ffb)
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:81b53b7` is available
+
+#### Changes (1 commit(s))
+
+- Miscellaneous fixes (0.18 beta) (#23716) ([81b53b7](https://github.com/blakeblackshear/frigate/commit/81b53b78356577ef6f5b075123aebfdf2e1f8ffb))
+
 ### c2e739b
 
 - Track Frigate dev branch commit [c2e739b](https://github.com/blakeblackshear/frigate/commit/c2e739b4bc75d848efaa7cb34c604f54282d3a8a)
