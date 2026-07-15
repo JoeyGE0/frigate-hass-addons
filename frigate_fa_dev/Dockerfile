@@ -4,7 +4,7 @@ FROM ${BUILD_FROM}
 
 # BuildKit / HA set TARGETARCH to amd64 or arm64 (matches go2rtc asset names).
 ARG TARGETARCH
-ARG GO2RTC_TAG=isapi-aac-e133542
+ARG GO2RTC_TAG=isapi-aac-0644543
 
 ADD --chmod=755 \
   "https://github.com/JoeyGE0/go2rtc/releases/download/${GO2RTC_TAG}/go2rtc_linux_${TARGETARCH}" \

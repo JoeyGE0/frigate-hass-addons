@@ -1,3 +1,7 @@
+### 81b53b7-aac4
+
+- go2rtc overlay → [isapi-aac-0644543](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-0644543): fix talk path when WebRTC track codec is ANY (use matched Opus/PCMU)
+
 ### 81b53b7-aac3
 
 - go2rtc overlay → [isapi-aac-e133542](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-e133542): prefer Opus→AAC (low-delay ffmpeg); PCMU/PCMA fallback; `[isapi]` debug logs; G.711 passthrough unchanged
