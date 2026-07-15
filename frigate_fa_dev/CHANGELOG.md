@@ -1,3 +1,14 @@
+### a8eca68-aac1
+
+- Track Frigate dev branch commit [a8eca68](https://github.com/blakeblackshear/frigate/commit/a8eca68438579aef3326029080d911c89dd3e907)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:a8eca68` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- Miscellaneous fixes (0.18 beta) (#23718) ([a8eca68](https://github.com/blakeblackshear/frigate/commit/a8eca68438579aef3326029080d911c89dd3e907))
+
 ### 81b53b7-aac4
 
 - go2rtc overlay → [isapi-aac-0644543](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-0644543): fix talk path when WebRTC track codec is ANY (use matched Opus/PCMU)
