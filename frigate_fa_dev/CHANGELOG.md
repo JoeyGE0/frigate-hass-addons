@@ -1,3 +1,7 @@
+### 81b53b7-aac2
+
+- go2rtc overlay → [isapi-aac-cc5bb61](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-cc5bb61): fix PCMU→AAC by finding Frigate `ffmpeg` path (talk matched but no speaker audio)
+
 ### 81b53b7-aac1
 
 - **Custom go2rtc:** builds from Frigate `81b53b7` and replaces embedded go2rtc with [JoeyGE0/go2rtc `isapi-aac-ea0238a`](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-ea0238a) (Hikvision ISAPI AAC talk)
