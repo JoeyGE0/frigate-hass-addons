@@ -1,3 +1,7 @@
+### 81b53b7-aac3
+
+- go2rtc overlay → [isapi-aac-e133542](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-e133542): prefer Opus→AAC (low-delay ffmpeg); PCMU/PCMA fallback; `[isapi]` debug logs; G.711 passthrough unchanged
+
 ### 81b53b7-aac2
 
 - go2rtc overlay → [isapi-aac-cc5bb61](https://github.com/JoeyGE0/go2rtc/releases/tag/isapi-aac-cc5bb61): fix PCMU→AAC by finding Frigate `ffmpeg` path (talk matched but no speaker audio)
