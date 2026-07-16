@@ -1,3 +1,16 @@
+### 48aaafb-aac1
+
+- Track Frigate dev branch commit [48aaafb](https://github.com/blakeblackshear/frigate/commit/48aaafba3c84ec1b23f175df9e93befb5f1a9e2e)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:48aaafb` is available
+
+#### Changes (3 commit(s))
+
+- Update OpenVINO model generation (#23733) ([70d629b](https://github.com/blakeblackshear/frigate/commit/70d629bf9343ef20ecf836626e61e361f750d018))
+- Fix persisted runtime camera toggles (#23734) ([f1028d0](https://github.com/blakeblackshear/frigate/commit/f1028d0c36b782d03512e551564176c3dae2b27a))
+- re-apply runtime overrides to the config without re-broadcasting them (#23739) ([48aaafb](https://github.com/blakeblackshear/frigate/commit/48aaafba3c84ec1b23f175df9e93befb5f1a9e2e))
+
 ### c406a93-aac1
 
 - Track Frigate dev branch commit [c406a93](https://github.com/blakeblackshear/frigate/commit/c406a93d3d123fd75173f770ffc9b0603195f25c)
