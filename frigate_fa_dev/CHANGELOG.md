@@ -1,3 +1,14 @@
+### dd7e9f1-aac1
+
+- Track Frigate dev branch commit [dd7e9f1](https://github.com/blakeblackshear/frigate/commit/dd7e9f1bc58d51bac52cdb4d84748fa035add75b)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:dd7e9f1` is available
+
+#### Changes (1 commit(s))
+
+- Fix invalid escape sequences in RTSP password test (#23740) ([dd7e9f1](https://github.com/blakeblackshear/frigate/commit/dd7e9f1bc58d51bac52cdb4d84748fa035add75b))
+
 ### 48aaafb-aac1
 
 - Track Frigate dev branch commit [48aaafb](https://github.com/blakeblackshear/frigate/commit/48aaafba3c84ec1b23f175df9e93befb5f1a9e2e)
