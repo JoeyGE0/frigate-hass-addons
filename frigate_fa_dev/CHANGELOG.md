@@ -1,3 +1,14 @@
+### e3fa701-aac1
+
+- Track Frigate dev branch commit [e3fa701](https://github.com/blakeblackshear/frigate/commit/e3fa70189324e5eb3b1dba756c153f6696f457de)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:e3fa701` is available
+
+#### Changes (1 commit(s))
+
+- Recreate preview output directory before writing (fix 0.18 regression: silent permanent preview loss) (#23784) ([e3fa701](https://github.com/blakeblackshear/frigate/commit/e3fa70189324e5eb3b1dba756c153f6696f457de))
+
 ### 168cbea-aac1
 
 - Track Frigate dev branch commit [168cbea](https://github.com/blakeblackshear/frigate/commit/168cbea9eaa04266c5a271ab865c884835ecae3b)
