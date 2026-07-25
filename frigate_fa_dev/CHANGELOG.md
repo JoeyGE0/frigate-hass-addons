@@ -1,3 +1,14 @@
+### a573ea4-aac1
+
+- Track Frigate dev branch commit [a573ea4](https://github.com/blakeblackshear/frigate/commit/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:a573ea4` is available
+
+#### Changes (1 commit(s))
+
+- update icons and i18n for 2026.2 frigate+ labels (#23803) ([a573ea4](https://github.com/blakeblackshear/frigate/commit/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6))
+
 ### 9f91836-aac1
 
 - Track Frigate dev branch commit [9f91836](https://github.com/blakeblackshear/frigate/commit/9f918362e9cdc06add01e924dbff3ca87b2affc4)
