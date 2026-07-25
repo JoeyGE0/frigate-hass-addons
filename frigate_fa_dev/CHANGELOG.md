@@ -1,3 +1,14 @@
+### 49e0ad9-aac1
+
+- Track Frigate dev branch commit [49e0ad9](https://github.com/blakeblackshear/frigate/commit/49e0ad93c2b8034f4aab10c29077a4847c7548a6)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:49e0ad9` is available
+
+#### Changes (1 commit(s))
+
+- Add AI policy docs (#23805) ([49e0ad9](https://github.com/blakeblackshear/frigate/commit/49e0ad93c2b8034f4aab10c29077a4847c7548a6))
+
 ### 12dd242-aac1
 
 - Track Frigate dev branch commit [12dd242](https://github.com/blakeblackshear/frigate/commit/12dd242151875268b81987ff690f85d96cd379b5)
