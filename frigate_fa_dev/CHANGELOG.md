@@ -1,3 +1,14 @@
+### 7e08f7b-aac1
+
+- Track Frigate dev branch commit [7e08f7b](https://github.com/blakeblackshear/frigate/commit/7e08f7b821762ac570a463f415404d649c323c3c)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:7e08f7b` is available
+
+#### Changes (1 commit(s))
+
+- pin react-zoom-pan-pinch to 3.4.4 (same as 0.17.x) (#23818) ([7e08f7b](https://github.com/blakeblackshear/frigate/commit/7e08f7b821762ac570a463f415404d649c323c3c))
+
 ### 49e0ad9-aac1
 
 - Track Frigate dev branch commit [49e0ad9](https://github.com/blakeblackshear/frigate/commit/49e0ad93c2b8034f4aab10c29077a4847c7548a6)
