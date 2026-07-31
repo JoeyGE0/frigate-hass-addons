@@ -1,3 +1,14 @@
+### b848c90-aac1
+
+- Track Frigate dev branch commit [b848c90](https://github.com/blakeblackshear/frigate/commit/b848c90f026b0e56ed2ba76f128dbb708b41f163)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:b848c90` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- Fix wrong box format passed to cv2.dnn.NMSBoxes (#23876) ([b848c90](https://github.com/blakeblackshear/frigate/commit/b848c90f026b0e56ed2ba76f128dbb708b41f163))
+
 ### f1cc0e4-aac1
 
 - Track Frigate dev branch commit [f1cc0e4](https://github.com/blakeblackshear/frigate/commit/f1cc0e49d41c0aece88251a458c61481b007e42c)
