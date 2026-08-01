@@ -1,3 +1,14 @@
+### 4f2a297-aac1
+
+- Track Frigate dev branch commit [4f2a297](https://github.com/blakeblackshear/frigate/commit/4f2a297745747c5c8c9a8b7832bfd4aa687721e0)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:4f2a297` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- remove all references to degirum in frigate (#23882) ([4f2a297](https://github.com/blakeblackshear/frigate/commit/4f2a297745747c5c8c9a8b7832bfd4aa687721e0))
+
 ### b848c90-aac1
 
 - Track Frigate dev branch commit [b848c90](https://github.com/blakeblackshear/frigate/commit/b848c90f026b0e56ed2ba76f128dbb708b41f163)
