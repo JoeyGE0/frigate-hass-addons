@@ -1,3 +1,14 @@
+### 33c00a2-aac1
+
+- Track Frigate dev branch commit [33c00a2](https://github.com/blakeblackshear/frigate/commit/33c00a27e4bac8b8d276a6bf6f004570bedd3b5c)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:33c00a2` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- crop motion previews to the selected filter region (#23903) ([33c00a2](https://github.com/blakeblackshear/frigate/commit/33c00a27e4bac8b8d276a6bf6f004570bedd3b5c))
+
 ### 3b14ec0-aac1
 
 - Track Frigate dev branch commit [3b14ec0](https://github.com/blakeblackshear/frigate/commit/3b14ec0c871685dca8fcfbe2254cc7a9be22488d)
