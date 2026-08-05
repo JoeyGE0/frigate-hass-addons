@@ -1,3 +1,15 @@
+### e73a14d-aac1
+
+- Track Frigate dev branch commit [e73a14d](https://github.com/blakeblackshear/frigate/commit/e73a14db5d03e5f6532ddc6c02358d71f94de3c2)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:e73a14d` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (2 commit(s))
+
+- Pin the internal auth port to the value nginx bound at startup (#23909) ([4883e20](https://github.com/blakeblackshear/frigate/commit/4883e208981578e87eb65d87150d23b4ef5376cd))
+- Miscellaneous fixes (0.18 beta) (#23898) ([e73a14d](https://github.com/blakeblackshear/frigate/commit/e73a14db5d03e5f6532ddc6c02358d71f94de3c2))
+
 ### 33c00a2-aac1
 
 - Track Frigate dev branch commit [33c00a2](https://github.com/blakeblackshear/frigate/commit/33c00a27e4bac8b8d276a6bf6f004570bedd3b5c)
