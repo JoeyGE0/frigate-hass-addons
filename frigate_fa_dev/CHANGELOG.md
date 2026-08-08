@@ -1,3 +1,29 @@
+### 8e55da6-aac1
+
+- Track Frigate dev branch commit [8e55da6](https://github.com/blakeblackshear/frigate/commit/8e55da67b07c2e53438521e785c54d94a55ddbd5)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:8e55da6` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (16 commit(s))
+
+- Translated using Weblate (Lithuanian) ([9eb2c84](https://github.com/blakeblackshear/frigate/commit/9eb2c841a532ca105a4150296fd98a4c7a194baf))
+- Translated using Weblate (Telugu) ([24ab946](https://github.com/blakeblackshear/frigate/commit/24ab9460f5546f8f79a026797ee7c8792e1f99c2))
+- Translated using Weblate (German) ([5746f16](https://github.com/blakeblackshear/frigate/commit/5746f1647235417ce864ab84625d53e3757c9398))
+- Translated using Weblate (Danish) ([6aa2a01](https://github.com/blakeblackshear/frigate/commit/6aa2a010ceacb5fbaeb09d0010c7394828e62a65))
+- Translated using Weblate (English) ([a4c0aad](https://github.com/blakeblackshear/frigate/commit/a4c0aad2064a8db262ae536a57eb7eca72297946))
+- Translated using Weblate (Estonian) ([c00ea6a](https://github.com/blakeblackshear/frigate/commit/c00ea6a481308e20402576891aabd0e029260213))
+- Translated using Weblate (Russian) ([dbce2d5](https://github.com/blakeblackshear/frigate/commit/dbce2d5a43f345997fcf1c0d8d8a299e7b50df4d))
+- Translated using Weblate (Romanian) ([4e68c47](https://github.com/blakeblackshear/frigate/commit/4e68c4723f353f9dd9a94743afddc032ceb5cdc9))
+- Translated using Weblate (Japanese) ([22c3dfa](https://github.com/blakeblackshear/frigate/commit/22c3dfa5a58ce150546bb01b0c099dc6d7aa2896))
+- Translated using Weblate (Catalan) ([144513d](https://github.com/blakeblackshear/frigate/commit/144513d3d6636cbda09ee2ea5c4364772e206f4a))
+- Translated using Weblate (Czech) ([c62c313](https://github.com/blakeblackshear/frigate/commit/c62c31361fb538d294acc339917f9519abf4ac5c))
+- Translated using Weblate (Dutch) ([4e13c3c](https://github.com/blakeblackshear/frigate/commit/4e13c3c9a0814354df8946af6745290a934ef4d9))
+- Translated using Weblate (Swedish) ([e5382db](https://github.com/blakeblackshear/frigate/commit/e5382db70ea355a211a4b6589b29740818f8de24))
+- Translated using Weblate (Albanian) ([599e0ac](https://github.com/blakeblackshear/frigate/commit/599e0acad7d0a6c6ea6ee62618ce33dcb65bd161))
+- Translated using Weblate (Chinese (Simplified Han script)) ([62d90e8](https://github.com/blakeblackshear/frigate/commit/62d90e8de813ae663a92612803930c75b6cb5afe))
+- Translated using Weblate (Norwegian Bokmål) ([8e55da6](https://github.com/blakeblackshear/frigate/commit/8e55da67b07c2e53438521e785c54d94a55ddbd5))
+
 ### e73a14d-aac1
 
 - Track Frigate dev branch commit [e73a14d](https://github.com/blakeblackshear/frigate/commit/e73a14db5d03e5f6532ddc6c02358d71f94de3c2)
