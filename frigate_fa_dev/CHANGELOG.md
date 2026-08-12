@@ -1,3 +1,14 @@
+### aff9799-aac1
+
+- Track Frigate dev branch commit [aff9799](https://github.com/blakeblackshear/frigate/commit/aff9799451ebf531c28d60faa6d1f41647585bc3)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:aff9799` is available
+
+#### Changes (1 commit(s))
+
+- Don't require a restart to enable GenAI descriptions (#23964) ([aff9799](https://github.com/blakeblackshear/frigate/commit/aff9799451ebf531c28d60faa6d1f41647585bc3))
+
 ### c75611b-aac1
 
 - Track Frigate dev branch commit [c75611b](https://github.com/blakeblackshear/frigate/commit/c75611b4dfc2da6e3acaf68410f3d32a75917626)
