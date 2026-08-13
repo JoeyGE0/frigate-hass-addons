@@ -1,3 +1,15 @@
+### 6816050-aac1
+
+- Track Frigate dev branch commit [6816050](https://github.com/blakeblackshear/frigate/commit/6816050a4666f2051ca18cab855f82425104d6f0)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:6816050` is available
+
+#### Changes (2 commit(s))
+
+- filter dedicated LPR plates before creating the event (#23977) ([c70a080](https://github.com/blakeblackshear/frigate/commit/c70a0802b8f3c209f8cece10f6d1832a2d8f0500))
+- fix(audio): correct sodeling typo to yodeling (#23946) ([6816050](https://github.com/blakeblackshear/frigate/commit/6816050a4666f2051ca18cab855f82425104d6f0))
+
 ### aff9799-aac1
 
 - Track Frigate dev branch commit [aff9799](https://github.com/blakeblackshear/frigate/commit/aff9799451ebf531c28d60faa6d1f41647585bc3)
