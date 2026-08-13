@@ -1,3 +1,14 @@
+### fd98977-aac1
+
+- Track Frigate dev branch commit [fd98977](https://github.com/blakeblackshear/frigate/commit/fd989775068d04280cffbaaba44c5dca9120418d)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:fd98977` is available
+
+#### Changes (1 commit(s))
+
+- Categorize manual events as alerts when their label is an alert label (#23981) ([fd98977](https://github.com/blakeblackshear/frigate/commit/fd989775068d04280cffbaaba44c5dca9120418d))
+
 ### 6816050-aac1
 
 - Track Frigate dev branch commit [6816050](https://github.com/blakeblackshear/frigate/commit/6816050a4666f2051ca18cab855f82425104d6f0)
