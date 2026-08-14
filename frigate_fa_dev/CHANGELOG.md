@@ -1,3 +1,14 @@
+### 812e530-aac1
+
+- Track Frigate dev branch commit [812e530](https://github.com/blakeblackshear/frigate/commit/812e5308a3e0a329cee9badec2480d7defb74a94)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:812e530` is available
+
+#### Changes (1 commit(s))
+
+- fix notification suspend state lost on page reload (#23989) ([812e530](https://github.com/blakeblackshear/frigate/commit/812e5308a3e0a329cee9badec2480d7defb74a94))
+
 ### fd98977-aac1
 
 - Track Frigate dev branch commit [fd98977](https://github.com/blakeblackshear/frigate/commit/fd989775068d04280cffbaaba44c5dca9120418d)
