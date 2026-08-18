@@ -1,3 +1,16 @@
+### 036bae4-aac1
+
+- Track Frigate dev branch commit [036bae4](https://github.com/blakeblackshear/frigate/commit/036bae4ea96f23e564622a3d19c1558254122b2b)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:036bae4` is available
+
+#### Changes (3 commit(s))
+
+- Miscellaneous fixes (0.18 beta) (#24016) ([77fc2ce](https://github.com/blakeblackshear/frigate/commit/77fc2ce174bc64a44f9cc4adf3e2d7fb6d3641c6))
+- Fix Gemini tool calling on 3.6+ by using documented function response role (#24013) ([8384a8c](https://github.com/blakeblackshear/frigate/commit/8384a8c5b321846591df33996ab71e7b9453a616))
+- Return a specific 404 when starting a debug replay with no recordings in range (#24024) ([036bae4](https://github.com/blakeblackshear/frigate/commit/036bae4ea96f23e564622a3d19c1558254122b2b))
+
 ### 8425a76-aac1
 
 - Track Frigate dev branch commit [8425a76](https://github.com/blakeblackshear/frigate/commit/8425a76558e93fd1c6179ceefa3a621599b433f6)
