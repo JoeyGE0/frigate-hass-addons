@@ -1,3 +1,15 @@
+### ad79e66-aac1
+
+- Track Frigate dev branch commit [ad79e66](https://github.com/blakeblackshear/frigate/commit/ad79e666eb666d0c858cb95071f6af75f3f29866)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:ad79e66` is available
+
+#### Changes (2 commit(s))
+
+- Fix review summary report analysis creation to be scoped for users with full camera access only (#24056) ([fc79aea](https://github.com/blakeblackshear/frigate/commit/fc79aeab5ec0ff592899296e4ca096ec7eff384c))
+- API Consistency / Security Fixes (#24057) ([ad79e66](https://github.com/blakeblackshear/frigate/commit/ad79e666eb666d0c858cb95071f6af75f3f29866))
+
 ### b1cdf1f-aac1
 
 - Track Frigate dev branch commit [b1cdf1f](https://github.com/blakeblackshear/frigate/commit/b1cdf1f76beaf3a417c8e5d68a3626b739953f78)
