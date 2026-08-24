@@ -1,3 +1,16 @@
+### 271051f-aac1
+
+- Track Frigate dev branch commit [271051f](https://github.com/blakeblackshear/frigate/commit/271051f15b051cd03890ccbca411649a61e9260e)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:271051f` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (3 commit(s))
+
+- use extended graph optimization for jinav2 (#24079) ([41bc24c](https://github.com/blakeblackshear/frigate/commit/41bc24cce4d539e67e62207e12af6b23884d95e5))
+- Compare severity in send_alert's no-op update check (#24084) ([65fe6b6](https://github.com/blakeblackshear/frigate/commit/65fe6b610a37ce988e1d1882ef093c479d522082))
+- don't migrate embeddings as a valid role for genai providers (#24086) ([271051f](https://github.com/blakeblackshear/frigate/commit/271051f15b051cd03890ccbca411649a61e9260e))
+
 ### 0254a11-aac1
 
 - Track Frigate dev branch commit [0254a11](https://github.com/blakeblackshear/frigate/commit/0254a11874d7263e70421832b517fe635b1a4d9a)
