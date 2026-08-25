@@ -1,3 +1,14 @@
+### 41c8d6c-aac1
+
+- Track Frigate dev branch commit [41c8d6c](https://github.com/blakeblackshear/frigate/commit/41c8d6cc6b0097b3ff855a52b6484edf8f6603a5)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:41c8d6c` is available
+
+#### Changes (1 commit(s))
+
+- Set GPU_QUEUE_THROTTLE to low (#24088) ([41c8d6c](https://github.com/blakeblackshear/frigate/commit/41c8d6cc6b0097b3ff855a52b6484edf8f6603a5))
+
 ### 271051f-aac1
 
 - Track Frigate dev branch commit [271051f](https://github.com/blakeblackshear/frigate/commit/271051f15b051cd03890ccbca411649a61e9260e)
