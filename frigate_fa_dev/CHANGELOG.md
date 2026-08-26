@@ -1,3 +1,14 @@
+### 18c77fa-aac1
+
+- Track Frigate dev branch commit [18c77fa](https://github.com/blakeblackshear/frigate/commit/18c77faea5e5c5e4b5fca37bfa4a18377dfea6de)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:18c77fa` is available
+
+#### Changes (1 commit(s))
+
+- fix classification attribute access for viewers (not custom roles) (#24092) ([18c77fa](https://github.com/blakeblackshear/frigate/commit/18c77faea5e5c5e4b5fca37bfa4a18377dfea6de))
+
 ### 41c8d6c-aac1
 
 - Track Frigate dev branch commit [41c8d6c](https://github.com/blakeblackshear/frigate/commit/41c8d6cc6b0097b3ff855a52b6484edf8f6603a5)
