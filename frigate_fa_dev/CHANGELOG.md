@@ -1,3 +1,14 @@
+### 5197881-aac1
+
+- Track Frigate dev branch commit [5197881](https://github.com/blakeblackshear/frigate/commit/5197881ef7a27e30604fd296d33119db8c530706)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:5197881` is available
+
+#### Changes (1 commit(s))
+
+- Add more vehicle types to default attribute map (#24097) ([5197881](https://github.com/blakeblackshear/frigate/commit/5197881ef7a27e30604fd296d33119db8c530706))
+
 ### 18c77fa-aac1
 
 - Track Frigate dev branch commit [18c77fa](https://github.com/blakeblackshear/frigate/commit/18c77faea5e5c5e4b5fca37bfa4a18377dfea6de)
