@@ -1,3 +1,24 @@
+### a745070-aac1
+
+- Track Frigate dev branch commit [a745070](https://github.com/blakeblackshear/frigate/commit/a745070b76276ef7865bf6513d627196ff1c6d10)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:a745070` is available
+
+#### Changes (11 commit(s))
+
+- Translated using Weblate (Lithuanian) ([aee6aa1](https://github.com/blakeblackshear/frigate/commit/aee6aa18454e2caab3f4641dc59b73cbd1324a8c))
+- Translated using Weblate (Tamil) ([592775b](https://github.com/blakeblackshear/frigate/commit/592775bd199095e7ececd6dc6d868c9be9bd38cf))
+- Translated using Weblate (Russian) ([80efea2](https://github.com/blakeblackshear/frigate/commit/80efea2554e3a8ea9bb1fe0e48c61b75f9883603))
+- Translated using Weblate (Romanian) ([359d44f](https://github.com/blakeblackshear/frigate/commit/359d44fc8f76b03c9008af2166036bf0843cea78))
+- Translated using Weblate (Belarusian) ([baa1ba7](https://github.com/blakeblackshear/frigate/commit/baa1ba718c68c2d01a64b1a5916e0299817aaa5a))
+- Translated using Weblate (Catalan) ([c4d46b7](https://github.com/blakeblackshear/frigate/commit/c4d46b7ed3c9a231a689810e9412a02882c7ba77))
+- Translated using Weblate (Indonesian) ([a670972](https://github.com/blakeblackshear/frigate/commit/a670972a4ffbdb6b2f10850aac094a8c4f6efe54))
+- Translated using Weblate (Dutch) ([02da563](https://github.com/blakeblackshear/frigate/commit/02da563712a14b5f083361cc856e1b2f6487a637))
+- Translated using Weblate (Swedish) ([5926923](https://github.com/blakeblackshear/frigate/commit/59269238ed390f6e55a9adddcf5780e81baf7c0c))
+- Translated using Weblate (Finnish) ([4ffe687](https://github.com/blakeblackshear/frigate/commit/4ffe687c445fbf52369f345044d3c039331d4f7e))
+- proper belarusian locale support (#24112) ([a745070](https://github.com/blakeblackshear/frigate/commit/a745070b76276ef7865bf6513d627196ff1c6d10))
+
 ### ca18b8d-aac1
 
 - Track Frigate dev branch commit [ca18b8d](https://github.com/blakeblackshear/frigate/commit/ca18b8dc131ccb3e086f13a780853b775ef13426)
