@@ -1,3 +1,14 @@
+### c1b56b5-aac1
+
+- Track Frigate dev branch commit [c1b56b5](https://github.com/blakeblackshear/frigate/commit/c1b56b51b0efdc65edb622b8d24f8f6da981b191)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:c1b56b5` is available
+
+#### Changes (1 commit(s))
+
+- Backport 0.19 iOS HLS fixes (#24147) ([c1b56b5](https://github.com/blakeblackshear/frigate/commit/c1b56b51b0efdc65edb622b8d24f8f6da981b191))
+
 ### d37dff1-aac1
 
 - Track Frigate dev branch commit [d37dff1](https://github.com/blakeblackshear/frigate/commit/d37dff1b491e752d7bf6b0ca2c7efbaedca623cd)

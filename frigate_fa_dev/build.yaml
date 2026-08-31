@@ -1,6 +1,6 @@
 ---
 build_from:
-  aarch64: ghcr.io/blakeblackshear/frigate:d37dff1
-  amd64: ghcr.io/blakeblackshear/frigate:d37dff1
+  aarch64: ghcr.io/blakeblackshear/frigate:c1b56b5
+  amd64: ghcr.io/blakeblackshear/frigate:c1b56b5
 args:
   GO2RTC_TAG: isapi-aac-0644543
