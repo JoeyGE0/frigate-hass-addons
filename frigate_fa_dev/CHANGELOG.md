@@ -1,3 +1,14 @@
+### a529656-aac1
+
+- Track Frigate dev branch commit [a529656](https://github.com/blakeblackshear/frigate/commit/a529656a90d02e6b9fa8d8766898cd618816fa6e)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:a529656` is available
+
+#### Changes (1 commit(s))
+
+- Fix jumping timeline handles in debug replay range selection (#24158) ([a529656](https://github.com/blakeblackshear/frigate/commit/a529656a90d02e6b9fa8d8766898cd618816fa6e))
+
 ### c1b56b5-aac1
 
 - Track Frigate dev branch commit [c1b56b5](https://github.com/blakeblackshear/frigate/commit/c1b56b51b0efdc65edb622b8d24f8f6da981b191)
