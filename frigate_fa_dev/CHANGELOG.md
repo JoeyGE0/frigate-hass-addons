@@ -1,3 +1,31 @@
+### b4d5035-aac1
+
+- Track Frigate dev branch commit [b4d5035](https://github.com/blakeblackshear/frigate/commit/b4d5035b79d153a3890cbe08e05518c96e67c2c3)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:b4d5035` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (18 commit(s))
+
+- Adjust audio striping (#24161) ([2117b58](https://github.com/blakeblackshear/frigate/commit/2117b58ababb8d56f7e52346b27cd803c67d8ca1))
+- Translated using Weblate (Lithuanian) ([149362c](https://github.com/blakeblackshear/frigate/commit/149362c77f0d5dde6ced0f126f747bcd54923819))
+- Translated using Weblate (Tamil) ([c6688c8](https://github.com/blakeblackshear/frigate/commit/c6688c8ce748d64b38fabb2685fd5ce49306364d))
+- Translated using Weblate (German) ([6e10685](https://github.com/blakeblackshear/frigate/commit/6e106854e412fcd947747a6dd3baedfdabc5e8a7))
+- Translated using Weblate (Estonian) ([ac16dec](https://github.com/blakeblackshear/frigate/commit/ac16decf05a81c04ab04457d671c975465cab05f))
+- Translated using Weblate (Romanian) ([08a13d9](https://github.com/blakeblackshear/frigate/commit/08a13d955ea8c59d89570abdd40acb3803a0d3d5))
+- Translated using Weblate (Belarusian) ([bc3e4a0](https://github.com/blakeblackshear/frigate/commit/bc3e4a0b358c17052e430245bcd34385dc6019c4))
+- Translated using Weblate (Catalan) ([10eb677](https://github.com/blakeblackshear/frigate/commit/10eb677e4c386527ccf5e7c7f738262b2a4c8614))
+- Translated using Weblate (Polish) ([632af09](https://github.com/blakeblackshear/frigate/commit/632af09f732f079c95a5af055e37043f94e31cf0))
+- Translated using Weblate (Italian) ([77d6b05](https://github.com/blakeblackshear/frigate/commit/77d6b0540d73f29a44cb432d0125c0ae1bbc462a))
+- Added translation using Weblate (Azerbaijani) ([3e6d60f](https://github.com/blakeblackshear/frigate/commit/3e6d60fcac2201c9ea0e7be6f0b4365ff2ac0be6))
+- Translated using Weblate (Indonesian) ([47d2525](https://github.com/blakeblackshear/frigate/commit/47d25254e96f0a5bcc3197f90fbbab735f1ad420))
+- Translated using Weblate (French) ([2568144](https://github.com/blakeblackshear/frigate/commit/25681444d450c068aeb1d238014658b3e763f381))
+- Translated using Weblate (Korean) ([e983825](https://github.com/blakeblackshear/frigate/commit/e98382578164059347d9780d9cc9900a0cf5380b))
+- Translated using Weblate (Chinese (Traditional Han script)) ([c71939a](https://github.com/blakeblackshear/frigate/commit/c71939acc2da5d14c545a9482dd5fe8bf6c17491))
+- Translated using Weblate (Chinese (Simplified Han script)) ([0d5038c](https://github.com/blakeblackshear/frigate/commit/0d5038c7a0a28bddb2e7f5e2d9072e57761b56bc))
+- Translated using Weblate (Norwegian Bokmål) ([7497ef7](https://github.com/blakeblackshear/frigate/commit/7497ef7506130a3182a5f191212e80fd53bb3323))
+- Docs: fix Synaptics default model path and warn about v4l2m2m kernel Oops on GT-BE19000AI (#24008) ([b4d5035](https://github.com/blakeblackshear/frigate/commit/b4d5035b79d153a3890cbe08e05518c96e67c2c3))
+
 ### a529656-aac1
 
 - Track Frigate dev branch commit [a529656](https://github.com/blakeblackshear/frigate/commit/a529656a90d02e6b9fa8d8766898cd618816fa6e)
