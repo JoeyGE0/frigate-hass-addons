@@ -1,3 +1,14 @@
+### 9e74adf-aac1
+
+- Track Frigate dev branch commit [9e74adf](https://github.com/blakeblackshear/frigate/commit/9e74adf8126eb1ac9f7bfb365e2ee04eec857a43)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:9e74adf` is available
+
+#### Changes (1 commit(s))
+
+- Guard against memory allocation in graph capture (#24192) ([9e74adf](https://github.com/blakeblackshear/frigate/commit/9e74adf8126eb1ac9f7bfb365e2ee04eec857a43))
+
 ### 287fc42-aac1
 
 - Track Frigate dev branch commit [287fc42](https://github.com/blakeblackshear/frigate/commit/287fc4240423f624beb62f3e78a4f92132d194d8)
