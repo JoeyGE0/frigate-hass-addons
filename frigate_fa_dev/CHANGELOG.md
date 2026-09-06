@@ -1,3 +1,14 @@
+### 77a66e7-aac1
+
+- Track Frigate dev branch commit [77a66e7](https://github.com/blakeblackshear/frigate/commit/77a66e75c61862b048a07c1295877f4b31343504)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:77a66e7` is available
+
+#### Changes (1 commit(s))
+
+- Fix Content-Type for webp, png, and jpeg files in /clips/ (#24208) ([77a66e7](https://github.com/blakeblackshear/frigate/commit/77a66e75c61862b048a07c1295877f4b31343504))
+
 ### 4ac92da-aac1
 
 - Track Frigate dev branch commit [4ac92da](https://github.com/blakeblackshear/frigate/commit/4ac92dac7235619c8811f471729fca4be2ba1f0a)
