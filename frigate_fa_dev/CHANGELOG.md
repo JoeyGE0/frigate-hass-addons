@@ -1,3 +1,14 @@
+### 4ac92da-aac1
+
+- Track Frigate dev branch commit [4ac92da](https://github.com/blakeblackshear/frigate/commit/4ac92dac7235619c8811f471729fca4be2ba1f0a)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:4ac92da` is available
+
+#### Changes (1 commit(s))
+
+- Sync PWA status bar theme-color with resolved app theme (#24203) ([4ac92da](https://github.com/blakeblackshear/frigate/commit/4ac92dac7235619c8811f471729fca4be2ba1f0a))
+
 ### 6ceb370-aac1
 
 - Track Frigate dev branch commit [6ceb370](https://github.com/blakeblackshear/frigate/commit/6ceb370abbba51428535b8fcd1031e8696ee7ede)
