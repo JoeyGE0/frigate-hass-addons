@@ -1,3 +1,16 @@
+### d59c28e-aac1
+
+- Track Frigate dev branch commit [d59c28e](https://github.com/blakeblackshear/frigate/commit/d59c28e53a8cf808d81560896c0af2930ba9917b)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:d59c28e` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (3 commit(s))
+
+- fix CI smoke test (#24254) ([dcfe530](https://github.com/blakeblackshear/frigate/commit/dcfe5307c901571c7941b9091a007d1cfb6b42c8))
+- Add error boundary to frontend (#24255) ([4861a66](https://github.com/blakeblackshear/frigate/commit/4861a668b1531040e274d2197598fc8eac6f3260))
+- Add command menu to frontend (#24256) ([d59c28e](https://github.com/blakeblackshear/frigate/commit/d59c28e53a8cf808d81560896c0af2930ba9917b))
+
 ### 37f338d-aac1
 
 - Track Frigate dev branch commit [37f338d](https://github.com/blakeblackshear/frigate/commit/37f338d5d6d0c8a117a262aacb7e6184660fd157)
