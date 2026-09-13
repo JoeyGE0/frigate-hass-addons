@@ -1,3 +1,32 @@
+### 8d652ce-aac1
+
+- Track Frigate dev branch commit [8d652ce](https://github.com/blakeblackshear/frigate/commit/8d652ce6e430c1f8f03f29c211781ba605681b2b)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:8d652ce` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (19 commit(s))
+
+- Bump webpack-dev-server from 5.2.2 to 5.2.6 in /docs (#23819) ([0987024](https://github.com/blakeblackshear/frigate/commit/0987024856f0f8f5e9b2b40f5c91d23e7edbaae0))
+- Bump mermaid from 11.12.2 to 11.16.1 in /docs (#23935) ([7627008](https://github.com/blakeblackshear/frigate/commit/7627008c11e5db83111104cd6bd46c673bfec467))
+- Bump brace-expansion in /docs (#22682) ([54c63c4](https://github.com/blakeblackshear/frigate/commit/54c63c485a417558f1a480a4c03e4093ab51bfaa))
+- Bump follow-redirects from 1.15.11 to 1.16.0 in /docs (#22892) ([54d2c99](https://github.com/blakeblackshear/frigate/commit/54d2c99f6f43ceff1c1293ac977ed051fdf7d86d))
+- Bump @babel/plugin-transform-modules-systemjs in /docs (#23148) ([177e0b7](https://github.com/blakeblackshear/frigate/commit/177e0b73c0830759a746204c555cfc44d897c053))
+- Bump websocket-driver from 0.7.4 to 0.7.5 in /docs (#23729) ([c5e9ff6](https://github.com/blakeblackshear/frigate/commit/c5e9ff6f676a16d2c24cfa3511587323170fc509))
+- Bump immutable from 5.1.5 to 5.1.9 in /docs (#23797) ([cce23c1](https://github.com/blakeblackshear/frigate/commit/cce23c1983da14bac7aa2d2c977bd8dfac577f68))
+- Bump fast-uri from 3.1.2 to 3.1.4 in /docs (#23811) ([eaad3cd](https://github.com/blakeblackshear/frigate/commit/eaad3cdad72ddc44bee884dca71e58b7f6caf98d))
+- Bump body-parser from 1.20.4 to 1.20.6 in /docs (#23812) ([c2b9e12](https://github.com/blakeblackshear/frigate/commit/c2b9e1222fc3f6666e2e630847d54f084dfe4e1a))
+- Bump postcss from 8.5.6 to 8.5.23 in /docs (#23813) ([4cdcb51](https://github.com/blakeblackshear/frigate/commit/4cdcb515718d6f9daa2c08049993b960cda98179))
+- Bump ws in /docs (#23830) ([021c12d](https://github.com/blakeblackshear/frigate/commit/021c12d70715adf30b8b9c3cd1d051bd8260cf9e))
+- Bump js-yaml from 4.1.1 to 4.3.2 in /docs (#24277) ([97a2697](https://github.com/blakeblackshear/frigate/commit/97a26975878ab3cd15ebdb43d7ffa722807615dc))
+- Bump svgo from 3.3.2 to 3.3.5 in /docs (#24274) ([fc57dc3](https://github.com/blakeblackshear/frigate/commit/fc57dc3b3623c87b53304bb91fb680ddea9a0e28))
+- Bump joi from 17.13.3 to 17.13.8 in /docs (#24275) ([89cc766](https://github.com/blakeblackshear/frigate/commit/89cc76680c3b157f83c31d8ff7f73284c8aaf59c))
+- Bump baseline-browser-mapping from 2.9.6 to 2.11.23 in /docs (#24276) ([8d64875](https://github.com/blakeblackshear/frigate/commit/8d648756d26aa7d00b7b05170f5b5a8a4b83a36c))
+- Bump fast-uri from 3.1.4 to 3.1.7 in /docs (#24280) ([95bdc23](https://github.com/blakeblackshear/frigate/commit/95bdc232d34b5ff618f88c6a3a3b0e9b843094d4))
+- Bump colord from 2.9.3 to 2.10.0 in /docs (#24281) ([94c9cdb](https://github.com/blakeblackshear/frigate/commit/94c9cdbe9bb321947edb4ca681f26831aba1f1cf))
+- Bump fast-uri from 3.1.2 to 3.1.7 in /web (#24283) ([9056696](https://github.com/blakeblackshear/frigate/commit/9056696ee58fb12442cc40dc6b31aaa9e64750f8))
+- Bump @ai-sdk/provider-utils, @ai-sdk/react and ai in /docs (#24284) ([8d652ce](https://github.com/blakeblackshear/frigate/commit/8d652ce6e430c1f8f03f29c211781ba605681b2b))
+
 ### a9eb286-aac1
 
 - Track Frigate dev branch commit [a9eb286](https://github.com/blakeblackshear/frigate/commit/a9eb286db9a3a2edbbb4a940917eb350c1982baa)
