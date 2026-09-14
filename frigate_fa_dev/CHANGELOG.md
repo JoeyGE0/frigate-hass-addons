@@ -1,3 +1,23 @@
+### 7821ecb-aac1
+
+- Track Frigate dev branch commit [7821ecb](https://github.com/blakeblackshear/frigate/commit/7821ecbb43fbeb871755a1790f40e0240d64e825)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:7821ecb` is available
+
+#### Changes (10 commit(s))
+
+- Bump framer-motion from 12.38.0 to 13.2.0 in /web (#24307) ([c583e21](https://github.com/blakeblackshear/frigate/commit/c583e21b708480454067b7b71ae993a0f3d49d9a))
+- Bump @radix-ui/react-aspect-ratio from 1.1.2 to 1.1.15 in /web (#24314) ([069315b](https://github.com/blakeblackshear/frigate/commit/069315be339bfecb0cb4572054eaed7d84ab92c7))
+- Update starlette-context requirement in /docker/main (#24305) ([fa36fa4](https://github.com/blakeblackshear/frigate/commit/fa36fa403b909337f25830710eee9a1f01d6215b))
+- Update prometheus-client requirement in /docker/main (#24313) ([cf03df8](https://github.com/blakeblackshear/frigate/commit/cf03df8a98548490152bfc49e71143d47dbc97c9))
+- Update unidecode requirement from ==1.3.* to ==1.4.* in /docker/main (#24320) ([e57eeb8](https://github.com/blakeblackshear/frigate/commit/e57eeb82886de89d71dc875edd5f77f6e9507271))
+- Update sherpa-onnx requirement from ==1.12.* to ==1.13.* in /docker/main (#24303) ([5be162a](https://github.com/blakeblackshear/frigate/commit/5be162a22c98de385dfd6c7858a297ccd3d6dc5f))
+- fix mypy errors from types-peewee 4.0 (#24323) ([3931ab7](https://github.com/blakeblackshear/frigate/commit/3931ab74a8f676011437360859e52036d37cf5a8))
+- Update deps (#24324) ([acc740a](https://github.com/blakeblackshear/frigate/commit/acc740a9765fae65007bbe398b53ad46db0e0f41))
+- Migrate web to ESLint 10 flat config (#24326) ([caa6ede](https://github.com/blakeblackshear/frigate/commit/caa6edecaca7fa81b13c5d4c023fe90237c6aab1))
+- Migrate Hailo detector key and support hailo device (#24327) ([7821ecb](https://github.com/blakeblackshear/frigate/commit/7821ecbb43fbeb871755a1790f40e0240d64e825))
+
 ### bb6c2e9-aac1
 
 - Track Frigate dev branch commit [bb6c2e9](https://github.com/blakeblackshear/frigate/commit/bb6c2e98ebb130de032a6be9c087b69af3f4b9e8)
