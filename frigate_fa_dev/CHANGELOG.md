@@ -1,3 +1,41 @@
+### bb6c2e9-aac1
+
+- Track Frigate dev branch commit [bb6c2e9](https://github.com/blakeblackshear/frigate/commit/bb6c2e98ebb130de032a6be9c087b69af3f4b9e8)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:bb6c2e9` is available
+
+#### Changes (28 commit(s))
+
+- Bump react-router-dom from 6.30.3 to 6.30.6 in /web (#24282) ([9182d07](https://github.com/blakeblackshear/frigate/commit/9182d07f121561fb0e403b80acf3467ca930138c))
+- Bump axios from 1.13.6 to 1.18.0 in /web (#23782) ([049263e](https://github.com/blakeblackshear/frigate/commit/049263eb42cb5af1b2577b57e092631b513f40dd))
+- Bump uuid and @rjsf/shadcn in /web (#23120) ([d25dbb6](https://github.com/blakeblackshear/frigate/commit/d25dbb69e121435ba2944f8c9d209b7fc06d43d6))
+- Bump react-icons from 5.5.0 to 5.6.0 in /web (#23072) ([3da100a](https://github.com/blakeblackshear/frigate/commit/3da100af62530be918865828d1fa8008c79ea442))
+- Bump postcss from 8.5.8 to 8.5.12 in /web (#23051) ([cd8a159](https://github.com/blakeblackshear/frigate/commit/cd8a159cc6e703a8488e4d08b5d9602fce78ef04))
+- Bump eslint-plugin-vitest-globals from 1.5.0 to 1.6.1 in /web (#23058) ([1dd5ec3](https://github.com/blakeblackshear/frigate/commit/1dd5ec312b5484ead417d9349d7e6db42f2005a6))
+- Bump tmp from 0.2.5 to 0.2.7 in /web (#23334) ([6d2bf59](https://github.com/blakeblackshear/frigate/commit/6d2bf59aa61c6cf85d221e9f08f458a7e0fb21ce))
+- Bump form-data from 4.0.5 to 4.0.6 in /web (#23532) ([05ebab8](https://github.com/blakeblackshear/frigate/commit/05ebab80b6bef484f4214106d728f0592bf3235e))
+- Bump braces from 3.0.2 to 3.0.3 in /web (#23839) ([c46b099](https://github.com/blakeblackshear/frigate/commit/c46b099e1447237c92ff452c458d104ab46fe66c))
+- Bump micromatch from 4.0.5 to 4.0.8 in /web (#23840) ([105b7bb](https://github.com/blakeblackshear/frigate/commit/105b7bb79d8d0fa52c1e4f6601a5fff946070b9c))
+- Bump js-yaml from 4.1.1 to 4.3.2 in /web (#24273) ([ea84b1b](https://github.com/blakeblackshear/frigate/commit/ea84b1be82a4c382abc92824ec7e2e9512ed9a39))
+- Bump nanoid from 3.3.11 to 3.3.19 in /web (#24286) ([94b37ce](https://github.com/blakeblackshear/frigate/commit/94b37ceb6ef4cd7de6bc57d9f3b10a6ee4d44c10))
+- Bump browserslist from 4.23.3 to 4.28.9 in /web (#24287) ([cf59d9a](https://github.com/blakeblackshear/frigate/commit/cf59d9ad562ddb3a024d30a87629f5d7c4bc60fc))
+- bump i18next-http-backend to 4.0.2 (#24290) ([4b71cb7](https://github.com/blakeblackshear/frigate/commit/4b71cb76dda055663b58a51c402631db039a08d5))
+- Update pyclipper requirement from ==1.3.* to ==1.4.* in /docker/main (#23063) ([d71d573](https://github.com/blakeblackshear/frigate/commit/d71d573edf04db2b505c5dcc35ef4e57bb46200b))
+- Update pyzmq requirement from ==26.2.* to ==27.1.* in /docker/main (#23064) ([3e7cb39](https://github.com/blakeblackshear/frigate/commit/3e7cb396e2c9040071a991fe9e68d3af936f95e0))
+- Update requests requirement from ==2.32.* to ==2.33.* in /docker/main (#23068) ([d5e3fed](https://github.com/blakeblackshear/frigate/commit/d5e3fed13066ee9236d4086194fe2d169aa59898))
+- Update joserfc requirement from ==1.2.* to ==1.6.* in /docker/main (#23071) ([828ecdd](https://github.com/blakeblackshear/frigate/commit/828ecdd0ea08d732b0fcad9a516f75269f1dbddb))
+- Update uvicorn requirement from ==0.35.* to ==0.46.* in /docker/main (#23073) ([d462aeb](https://github.com/blakeblackshear/frigate/commit/d462aeb06879cfc8f32e5a0b513fbf955e8f865b))
+- Update aiofiles requirement from ==24.1.* to ==25.1.* in /docker/main (#23074) ([8b8c90e](https://github.com/blakeblackshear/frigate/commit/8b8c90ee1a24b60e0e0937dbadfbe346afaae62e))
+- Update faster-whisper requirement in /docker/main (#23075) ([2106d10](https://github.com/blakeblackshear/frigate/commit/2106d10e2e837280c9b1643fe3b95d7de676fbbf))
+- Bump python-multipart from 0.0.26 to 0.0.31 in /docker/main (#23497) ([35b9c49](https://github.com/blakeblackshear/frigate/commit/35b9c4978d405aa5925ed22e18d792459ebac30e))
+- bump cryptography to 46 and pin py-vapid to 1.9.4 (#24292) ([06ff2ce](https://github.com/blakeblackshear/frigate/commit/06ff2ced5dc1d8f5ff157c2cb852a48f9c6d93ed))
+- Update click requirement from ==8.1.* to ==8.5.* in /docker/main (#23067) ([94422ff](https://github.com/blakeblackshear/frigate/commit/94422ff24fd0aaaafeed02e6e73646241aa84367))
+- Bump actions/setup-node from 6 to 7 (#23715) ([1f340f3](https://github.com/blakeblackshear/frigate/commit/1f340f389fd473d6a9065184b05248fd7ff45a96))
+- Bump actions/setup-python from 5.4.0 to 7.0.0 (#23768) ([ced95a1](https://github.com/blakeblackshear/frigate/commit/ced95a1a31aeaaa74b474a9bb4c200f8c9939cda))
+- Bump actions/checkout from 6 to 7 (#23510) ([0570a9c](https://github.com/blakeblackshear/frigate/commit/0570a9c4ebde5e610cfda75a8d6eba9b15325e48))
+- Bump docker/login-action from 3.5.0 to 4.6.0 (#23872) ([bb6c2e9](https://github.com/blakeblackshear/frigate/commit/bb6c2e98ebb130de032a6be9c087b69af3f4b9e8))
+
 ### 8d652ce-aac1
 
 - Track Frigate dev branch commit [8d652ce](https://github.com/blakeblackshear/frigate/commit/8d652ce6e430c1f8f03f29c211781ba605681b2b)
