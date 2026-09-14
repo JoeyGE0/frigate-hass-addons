@@ -1,3 +1,14 @@
+### eecc43c-aac1
+
+- Track Frigate dev branch commit [eecc43c](https://github.com/blakeblackshear/frigate/commit/eecc43ccef9cc252de5247c018a074d6362c2b5a)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:eecc43c` is available
+
+#### Changes (1 commit(s))
+
+- bump rjsf to 6.10.0 and add e2e test (#24332) ([eecc43c](https://github.com/blakeblackshear/frigate/commit/eecc43ccef9cc252de5247c018a074d6362c2b5a))
+
 ### 7821ecb-aac1
 
 - Track Frigate dev branch commit [7821ecb](https://github.com/blakeblackshear/frigate/commit/7821ecbb43fbeb871755a1790f40e0240d64e825)
