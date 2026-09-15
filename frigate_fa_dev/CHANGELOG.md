@@ -1,3 +1,16 @@
+### ba41c90-aac1
+
+- Track Frigate dev branch commit [ba41c90](https://github.com/blakeblackshear/frigate/commit/ba41c90c07ac9a354343aa252e4cf4543044f238)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:ba41c90` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (3 commit(s))
+
+- bump copy-to-clipboard to 4.0.2 (#24353) ([4c648f8](https://github.com/blakeblackshear/frigate/commit/4c648f8147af4de2e4d834a61392afbe978ed408))
+- update radix, react, konva and other web dependencies (#24354) ([0c52a31](https://github.com/blakeblackshear/frigate/commit/0c52a3175ddff5ef0611a5bd11692ddc217bb76d))
+- Remove unused deps (#24355) ([ba41c90](https://github.com/blakeblackshear/frigate/commit/ba41c90c07ac9a354343aa252e4cf4543044f238))
+
 ### e0d4337-aac1
 
 - Track Frigate dev branch commit [e0d4337](https://github.com/blakeblackshear/frigate/commit/e0d4337a256261ace49a4e364e780655bc26add6)
