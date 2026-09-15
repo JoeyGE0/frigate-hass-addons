@@ -1,3 +1,23 @@
+### e0d4337-aac1
+
+- Track Frigate dev branch commit [e0d4337](https://github.com/blakeblackshear/frigate/commit/e0d4337a256261ace49a4e364e780655bc26add6)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:e0d4337` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (10 commit(s))
+
+- Replace react-logviewer with virtua (#24334) ([fa30a7e](https://github.com/blakeblackshear/frigate/commit/fa30a7e1ae64e7411bad4b229a0a59b26131191e))
+- Miscellaneous fixes (#24352) ([4100383](https://github.com/blakeblackshear/frigate/commit/41003837383b11f568eebb8a6d33c6398724180c))
+- Bump @radix-ui/react-toggle from 1.1.10 to 1.1.18 in /web (#24344) ([84f981a](https://github.com/blakeblackshear/frigate/commit/84f981a77cc03c5cb3fd95d035876a9a98efb894))
+- Bump autoprefixer from 10.4.20 to 10.5.6 in /web (#24340) ([eddc9fc](https://github.com/blakeblackshear/frigate/commit/eddc9fccd174110b99c2f0b0b8e07b9c12c91601))
+- Bump lucide-react from 0.577.0 to 1.45.0 in /web (#24337) ([8a8da66](https://github.com/blakeblackshear/frigate/commit/8a8da663c00f16cd8d5c89303bf28039f64284aa))
+- Bump @radix-ui/react-radio-group from 1.3.8 to 1.4.7 in /web (#24339) ([8a98d7c](https://github.com/blakeblackshear/frigate/commit/8a98d7c9b1077880099c856091135addf7bc2572))
+- Bump @radix-ui/react-progress from 1.1.8 to 1.1.16 in /web (#24342) ([dd77bae](https://github.com/blakeblackshear/frigate/commit/dd77bae4f7be24be771c3130d7aa844645946729))
+- Update netaddr requirement from ==0.8.* to ==1.3.* in /docker/main (#24346) ([57a2765](https://github.com/blakeblackshear/frigate/commit/57a2765d00e361a1af21050ce2d3a80bf29262cb))
+- Update uvicorn requirement from ==0.46.* to ==0.52.* in /docker/main (#24341) ([5e689f2](https://github.com/blakeblackshear/frigate/commit/5e689f2d857709eb766064f3a8d3e3463b4c5236))
+- Update memray requirement from ==1.15.* to ==1.20.* in /docker/main (#24343) ([e0d4337](https://github.com/blakeblackshear/frigate/commit/e0d4337a256261ace49a4e364e780655bc26add6))
+
 ### eecc43c-aac1
 
 - Track Frigate dev branch commit [eecc43c](https://github.com/blakeblackshear/frigate/commit/eecc43ccef9cc252de5247c018a074d6362c2b5a)
