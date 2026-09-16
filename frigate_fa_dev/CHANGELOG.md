@@ -1,3 +1,14 @@
+### 10a0d5e-aac1
+
+- Track Frigate dev branch commit [10a0d5e](https://github.com/blakeblackshear/frigate/commit/10a0d5ea373025b9a53fbc90a1c701d76b160928)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:10a0d5e` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- Improve UI zone operations (#24376) ([10a0d5e](https://github.com/blakeblackshear/frigate/commit/10a0d5ea373025b9a53fbc90a1c701d76b160928))
+
 ### 64d6366-aac1
 
 - Track Frigate dev branch commit [64d6366](https://github.com/blakeblackshear/frigate/commit/64d6366ac4be29cf9044a2a0e11ba29464ad9765)
