@@ -1,3 +1,15 @@
+### 79ca18d-aac1
+
+- Track Frigate dev branch commit [79ca18d](https://github.com/blakeblackshear/frigate/commit/79ca18d439d0ac4fe2d4fba647f4d1d063cecb36)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:79ca18d` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (2 commit(s))
+
+- Update more web deps and reformat with updated prettier (#24358) ([cabdffe](https://github.com/blakeblackshear/frigate/commit/cabdffea20cc0031eac55d8361c4f3c429a00868))
+- fix build warnings from tailwind, fonts, and fast refresh (#24359) ([79ca18d](https://github.com/blakeblackshear/frigate/commit/79ca18d439d0ac4fe2d4fba647f4d1d063cecb36))
+
 ### ba41c90-aac1
 
 - Track Frigate dev branch commit [ba41c90](https://github.com/blakeblackshear/frigate/commit/ba41c90c07ac9a354343aa252e4cf4543044f238)
