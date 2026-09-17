@@ -1,3 +1,14 @@
+### eccd10c-aac1
+
+- Track Frigate dev branch commit [eccd10c](https://github.com/blakeblackshear/frigate/commit/eccd10cd941a4abdce0cd6ae2aa6b274f7fdbafe)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:eccd10c` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- Implement annotated frames for GenAI Review (#24379) ([eccd10c](https://github.com/blakeblackshear/frigate/commit/eccd10cd941a4abdce0cd6ae2aa6b274f7fdbafe))
+
 ### 10a0d5e-aac1
 
 - Track Frigate dev branch commit [10a0d5e](https://github.com/blakeblackshear/frigate/commit/10a0d5ea373025b9a53fbc90a1c701d76b160928)
