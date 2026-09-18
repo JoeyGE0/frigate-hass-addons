@@ -1,3 +1,14 @@
+### 3340739-aac1
+
+- Track Frigate dev branch commit [3340739](https://github.com/blakeblackshear/frigate/commit/334073967b1ab89154652a9ea1e0cd15831f7d01)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:3340739` is available
+
+#### Changes (1 commit(s))
+
+- Support using GenAI for audio transcription (#24396) ([3340739](https://github.com/blakeblackshear/frigate/commit/334073967b1ab89154652a9ea1e0cd15831f7d01))
+
 ### eccd10c-aac1
 
 - Track Frigate dev branch commit [eccd10c](https://github.com/blakeblackshear/frigate/commit/eccd10cd941a4abdce0cd6ae2aa6b274f7fdbafe)
