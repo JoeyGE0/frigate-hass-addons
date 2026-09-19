@@ -1,3 +1,14 @@
+### 285dd5a-aac1
+
+- Track Frigate dev branch commit [285dd5a](https://github.com/blakeblackshear/frigate/commit/285dd5a46156ead0bc7a22d2058babb604bf099b)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:285dd5a` is available
+
+#### Changes (1 commit(s))
+
+- Translations update from Hosted Weblate (#24333) ([285dd5a](https://github.com/blakeblackshear/frigate/commit/285dd5a46156ead0bc7a22d2058babb604bf099b))
+
 ### 3d08bbe-aac1
 
 - Track Frigate dev branch commit [3d08bbe](https://github.com/blakeblackshear/frigate/commit/3d08bbe5201389c65f80d22ad38a7b7432c75e87)
