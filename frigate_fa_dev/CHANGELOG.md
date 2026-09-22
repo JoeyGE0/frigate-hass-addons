@@ -1,3 +1,14 @@
+### af0ba19-aac1
+
+- Track Frigate dev branch commit [af0ba19](https://github.com/blakeblackshear/frigate/commit/af0ba191966812cf9ac8515d95b1dd221363d17e)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:af0ba19` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (1 commit(s))
+
+- Feat/deepx npu detector (#24336) ([af0ba19](https://github.com/blakeblackshear/frigate/commit/af0ba191966812cf9ac8515d95b1dd221363d17e))
+
 ### 52f50a7-aac1
 
 - Track Frigate dev branch commit [52f50a7](https://github.com/blakeblackshear/frigate/commit/52f50a7396ebdef7a22aa9682b275ca4828f6399)
