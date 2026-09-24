@@ -1,3 +1,15 @@
+### 40f8ba1-aac1
+
+- Track Frigate dev branch commit [40f8ba1](https://github.com/blakeblackshear/frigate/commit/40f8ba1f7f8f85861feacaee1c07c1914d675e66)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:40f8ba1` is available
+
+#### Changes (2 commit(s))
+
+- Rate events over at least one second (#24455) ([397f525](https://github.com/blakeblackshear/frigate/commit/397f5253a568abddbe0f7968fd99b400ca9f1ac0))
+- Offer the full playback rate list on Safari (#24444) ([40f8ba1](https://github.com/blakeblackshear/frigate/commit/40f8ba1f7f8f85861feacaee1c07c1914d675e66))
+
 ### af0ba19-aac1
 
 - Track Frigate dev branch commit [af0ba19](https://github.com/blakeblackshear/frigate/commit/af0ba191966812cf9ac8515d95b1dd221363d17e)
