@@ -1,3 +1,16 @@
+### 6791df7-aac1
+
+- Track Frigate dev branch commit [6791df7](https://github.com/blakeblackshear/frigate/commit/6791df7971ac4c79834a73f668e0830893bc4c89)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:6791df7` is available
+
+#### Changes (3 commit(s))
+
+- Apple Silicon Macs via lighter: ONNX detector on the Neural Engine and media engine decode (#24453) ([c959df3](https://github.com/blakeblackshear/frigate/commit/c959df32c9b5a56fe6e49ae2b90082a0ba9475a7))
+- Notices and status bar improvements (#24459) ([9664d9c](https://github.com/blakeblackshear/frigate/commit/9664d9ceaebdf17e8801d943935440bd9ec0ecb3))
+- Fix ZMQ detector ignoring the endpoint in its device string (#24464) ([6791df7](https://github.com/blakeblackshear/frigate/commit/6791df7971ac4c79834a73f668e0830893bc4c89))
+
 ### c5889ef-aac1
 
 - Track Frigate dev branch commit [c5889ef](https://github.com/blakeblackshear/frigate/commit/c5889ef35f00b08fecc8f2f28f3dacdb67f0e978)
