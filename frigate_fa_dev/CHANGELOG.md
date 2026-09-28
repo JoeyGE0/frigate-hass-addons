@@ -1,3 +1,15 @@
+### dc97f29-aac1
+
+- Track Frigate dev branch commit [dc97f29](https://github.com/blakeblackshear/frigate/commit/dc97f294a05c090d3f926f80f9c0cd50f81ae8fc)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:dc97f29` is available
+
+#### Changes (2 commit(s))
+
+- Miscellaneous fixes (#24498) ([a1c8bf9](https://github.com/blakeblackshear/frigate/commit/a1c8bf99a7ac2c61eadc2aa645832a06be3d62fb))
+- Support newer and cleaner llama.cpp embeddings api (#24499) ([dc97f29](https://github.com/blakeblackshear/frigate/commit/dc97f294a05c090d3f926f80f9c0cd50f81ae8fc))
+
 ### f9a37d4-aac1
 
 - Track Frigate dev branch commit [f9a37d4](https://github.com/blakeblackshear/frigate/commit/f9a37d4f4f92494f0d6fcce96b12d978424a864e)
