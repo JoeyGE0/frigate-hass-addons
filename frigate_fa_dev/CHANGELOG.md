@@ -1,3 +1,15 @@
+### f9a37d4-aac1
+
+- Track Frigate dev branch commit [f9a37d4](https://github.com/blakeblackshear/frigate/commit/f9a37d4f4f92494f0d6fcce96b12d978424a864e)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:f9a37d4` is not published yet; the add-on may not install until Frigate builds it
+
+#### Changes (2 commit(s))
+
+- Improve camera group live view grids (#24461) ([0977fa5](https://github.com/blakeblackshear/frigate/commit/0977fa5e15cba802c9df7f8b21edf62b56075baf))
+- remember last selected history sidebar tab (#24488) ([f9a37d4](https://github.com/blakeblackshear/frigate/commit/f9a37d4f4f92494f0d6fcce96b12d978424a864e))
+
 ### 6791df7-aac1
 
 - Track Frigate dev branch commit [6791df7](https://github.com/blakeblackshear/frigate/commit/6791df7971ac4c79834a73f668e0830893bc4c89)
