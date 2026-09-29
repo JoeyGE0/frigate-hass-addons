@@ -1,3 +1,51 @@
+### 5e87d10-aac1
+
+- Track Frigate dev branch commit [5e87d10](https://github.com/blakeblackshear/frigate/commit/5e87d101da9954878b8e038e557cff0ecaac1ab5)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:5e87d10` is available
+
+#### Changes (38 commit(s))
+
+- Translated using Weblate (Turkish) ([008a02e](https://github.com/blakeblackshear/frigate/commit/008a02eca85b2206b06b080639110541ecc6e366))
+- Update translation files ([e36c7ae](https://github.com/blakeblackshear/frigate/commit/e36c7ae118fd90d5d4ae4d75f556f27fc0fdd043))
+- Translated using Weblate (Portuguese (Brazil)) ([c95d7f1](https://github.com/blakeblackshear/frigate/commit/c95d7f1808db40328a65dc2992180b48e71350fb))
+- Update translation files ([bd75d4b](https://github.com/blakeblackshear/frigate/commit/bd75d4bba0fc52df7f3750ea41c084bceafb76d6))
+- Translated using Weblate (Danish) ([c26eb02](https://github.com/blakeblackshear/frigate/commit/c26eb023fcfffb3163af3664476af2455f98b2e1))
+- Translated using Weblate (Estonian) ([e155f67](https://github.com/blakeblackshear/frigate/commit/e155f67f2223e53ef6e108630cfab12855742351))
+- Translated using Weblate (Russian) ([f08e880](https://github.com/blakeblackshear/frigate/commit/f08e8800998c9fd0ef878dae714233566fb60406))
+- Translated using Weblate (Romanian) ([94146e2](https://github.com/blakeblackshear/frigate/commit/94146e20518a28b70cf2305c5dbed5156ac04424))
+- Update translation files ([32d15f2](https://github.com/blakeblackshear/frigate/commit/32d15f2cbdfd85e3dcbda0e1c71d9f36fbb4f021))
+- Update translation files ([f6e119c](https://github.com/blakeblackshear/frigate/commit/f6e119c89eff19c2fbcc3cff37586485f3023966))
+- Update translation files ([8858f06](https://github.com/blakeblackshear/frigate/commit/8858f06624f6a6407a5daece2a0c18552a603166))
+- Update translation files ([3e07588](https://github.com/blakeblackshear/frigate/commit/3e075885f72f3ecaf2b1393a3fbc1b0562965dfd))
+- Translated using Weblate (Catalan) ([19a378a](https://github.com/blakeblackshear/frigate/commit/19a378af436370b2a97ca278b2eb11c99f255e9d))
+- Update translation files ([6637103](https://github.com/blakeblackshear/frigate/commit/6637103b5825eb3a894f2034d5c589d7e850d12c))
+- Update translation files ([ca6a85b](https://github.com/blakeblackshear/frigate/commit/ca6a85be291d2f014946f25c938cc55be90c3afc))
+- Translated using Weblate (Vietnamese) ([0ea9c96](https://github.com/blakeblackshear/frigate/commit/0ea9c96f89653d6e1bc9c8ace551769a688a68c1))
+- Update translation files ([c5f979d](https://github.com/blakeblackshear/frigate/commit/c5f979d52241b13bbf4b6d393703445d7c8ef147))
+- Update translation files ([ae88705](https://github.com/blakeblackshear/frigate/commit/ae88705b885405ac5b0eb57b2b963a263f52b297))
+- Update translation files ([b7fae3b](https://github.com/blakeblackshear/frigate/commit/b7fae3bafd12925f962eeb6c5d48c152a167d6d1))
+- Update translation files ([8b035e3](https://github.com/blakeblackshear/frigate/commit/8b035e36d3da152a44e7323f24db04dac7776277))
+- Update translation files ([bf032bc](https://github.com/blakeblackshear/frigate/commit/bf032bc92adf6c5cfcceb4f42c2adc60e3112fac))
+- Update translation files ([0ea571a](https://github.com/blakeblackshear/frigate/commit/0ea571abfe82cf303449269783f33b7b9c78e92f))
+- Update translation files ([bd4f7a3](https://github.com/blakeblackshear/frigate/commit/bd4f7a36565675fd622925121cb1743e0103c930))
+- Update translation files ([6259872](https://github.com/blakeblackshear/frigate/commit/62598723141dfbf6b090b85e2d02c3cfe1286888))
+- Update translation files ([2755f7c](https://github.com/blakeblackshear/frigate/commit/2755f7c8c3b6e401b466613cf74139bb80b301ed))
+- Update translation files ([8266a3d](https://github.com/blakeblackshear/frigate/commit/8266a3d9dd3cbd63848cfb72886c088dd6314720))
+- Update translation files ([19a7f35](https://github.com/blakeblackshear/frigate/commit/19a7f35c00de52fd8546cd64024eb1c147b6427b))
+- Update translation files ([dfd4256](https://github.com/blakeblackshear/frigate/commit/dfd425655eadb2b60ce29f635b8a2eb1c7a93862))
+- Update translation files ([b5613ca](https://github.com/blakeblackshear/frigate/commit/b5613ca06cf0ab1fd6c143b39952f21a231fdd33))
+- Update translation files ([22a21c7](https://github.com/blakeblackshear/frigate/commit/22a21c761dcf9d1fc400311181e05660decd8807))
+- Update translation files ([698f3c1](https://github.com/blakeblackshear/frigate/commit/698f3c190454874ab88a1cb73eba143a839f62ed))
+- Update translation files ([abe99e5](https://github.com/blakeblackshear/frigate/commit/abe99e58386256efa0643b6a517039594afbfb9b))
+- Translated using Weblate (Urdu) ([6051374](https://github.com/blakeblackshear/frigate/commit/605137485233058b71bd91832e45f74655c8bb5d))
+- Update translation files ([2cdb10a](https://github.com/blakeblackshear/frigate/commit/2cdb10a96ad1bc729e14f62d7da421f76e5380d2))
+- Update translation files ([b13164c](https://github.com/blakeblackshear/frigate/commit/b13164cd3d5e16a590949f7a129249e9fba1a901))
+- Update translation files ([6d377e5](https://github.com/blakeblackshear/frigate/commit/6d377e56e44d639391555bc19a4d7f04491fa501))
+- Update translation files ([d092189](https://github.com/blakeblackshear/frigate/commit/d092189b8ea914cd4f5c15a3a725ee452f562444))
+- Integrate state changes with review items (#24503) ([5e87d10](https://github.com/blakeblackshear/frigate/commit/5e87d101da9954878b8e038e557cff0ecaac1ab5))
+
 ### dc97f29-aac1
 
 - Track Frigate dev branch commit [dc97f29](https://github.com/blakeblackshear/frigate/commit/dc97f294a05c090d3f926f80f9c0cd50f81ae8fc)
