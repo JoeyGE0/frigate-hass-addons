@@ -1,3 +1,14 @@
+### 2754f78-aac1
+
+- Track Frigate dev branch commit [2754f78](https://github.com/blakeblackshear/frigate/commit/2754f788ccdf26c3a125880e058fd73c19b4343d)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:2754f78` is available
+
+#### Changes (1 commit(s))
+
+- Add Auto live view option with transcoding options (#24519) ([2754f78](https://github.com/blakeblackshear/frigate/commit/2754f788ccdf26c3a125880e058fd73c19b4343d))
+
 ### 1bb61eb-aac1
 
 - Track Frigate dev branch commit [1bb61eb](https://github.com/blakeblackshear/frigate/commit/1bb61eb8081f78f128489a47d127f3f9cc4ceb88)
