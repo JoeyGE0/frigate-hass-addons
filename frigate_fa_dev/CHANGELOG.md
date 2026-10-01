@@ -1,3 +1,21 @@
+### d1cb839-aac1
+
+- Track Frigate dev branch commit [d1cb839](https://github.com/blakeblackshear/frigate/commit/d1cb8395eabe0433cbff960e1316bbfcf3856d7f)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:d1cb839` is available
+
+#### Changes (8 commit(s))
+
+- Bump fast-uri in /web (#24524) ([068068c](https://github.com/blakeblackshear/frigate/commit/068068ce19109e9d97e5a9f68f5b21f90881a1e8))
+- Bump fast-uri from 3.1.7 to 3.1.8 in /docs (#24531) ([be497bd](https://github.com/blakeblackshear/frigate/commit/be497bdb28a186b7220a77d1786d425da5d11c28))
+- Bump dompurify from 3.4.13 to 3.4.16 in /docs (#24532) ([3c57ba5](https://github.com/blakeblackshear/frigate/commit/3c57ba502080d7dc1d5733f7048c744e2c8d9ecc))
+- Bump brace-expansion in /web (#24530) ([16eac66](https://github.com/blakeblackshear/frigate/commit/16eac664636970e9944e6ade0e5b4a1b0c2f00d1))
+- Miscellaneous fixes (#24528) ([24a236a](https://github.com/blakeblackshear/frigate/commit/24a236a152d0fdb9370c17f91605a5b07528b385))
+- Fix detection not correctly being started after an alert ends (#24534) ([0936f4b](https://github.com/blakeblackshear/frigate/commit/0936f4b4efb666b94f291ea415c2a550325cde69))
+- Improve build cleanup step to reduce failures (#24536) ([3d0d123](https://github.com/blakeblackshear/frigate/commit/3d0d12366f34abc37f61a258be27a8ea2e942c51))
+- Reserve other volumes (#24538) ([d1cb839](https://github.com/blakeblackshear/frigate/commit/d1cb8395eabe0433cbff960e1316bbfcf3856d7f))
+
 ### 2754f78-aac1
 
 - Track Frigate dev branch commit [2754f78](https://github.com/blakeblackshear/frigate/commit/2754f788ccdf26c3a125880e058fd73c19b4343d)
