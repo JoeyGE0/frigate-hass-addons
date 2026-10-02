@@ -1,3 +1,36 @@
+### 9b02a07-aac1
+
+- Track Frigate dev branch commit [9b02a07](https://github.com/blakeblackshear/frigate/commit/9b02a077e92045383680975886519a00fc3c18a8)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:9b02a07` is available
+
+#### Changes (23 commit(s))
+
+- update labels/faq (#23759) ([50a2b67](https://github.com/blakeblackshear/frigate/commit/50a2b6729eb152d9512b100c78c55fa84dffa430))
+- Merge pull request #24249 from blakeblackshear/dev ([b1b725b](https://github.com/blakeblackshear/frigate/commit/b1b725b80a6e8db5142d87a4c26b053c1b467f14))
+- Clarify profile docs (#24267) ([5117131](https://github.com/blakeblackshear/frigate/commit/51171319a42a24c1c1cbe6854a87ac1aec33d016))
+- add field messages for recording and notifications (#24272) ([b02aea0](https://github.com/blakeblackshear/frigate/commit/b02aea03cd14c21002b8afb62310cad10feb1498))
+- Revert QSV ffmpeg framerate filter (#24384) ([04480a1](https://github.com/blakeblackshear/frigate/commit/04480a18b6bca8bf5a124300fbe79926784afded))
+- Handle sub labeled objects to still show up in review filter (#24391) ([d69107d](https://github.com/blakeblackshear/frigate/commit/d69107de335f3d0552e7486361dbe31950ef88e4))
+- Fix explore paging for non-date sorts (#24392) ([06967fe](https://github.com/blakeblackshear/frigate/commit/06967fec9171c9d4d766dcdcdd60da065b992589))
+- Remove invalid hardware acceleration step in recording troubleshooting (#24395) ([de416b7](https://github.com/blakeblackshear/frigate/commit/de416b7ae751b22ec96a78d294e4f7c9577d2f7b))
+- Fix semantic search reindex (#24407) ([26e6ade](https://github.com/blakeblackshear/frigate/commit/26e6adee88a0f1d04c63d938d1f98e0e5636c58a))
+- Add version/release link to docs site (#24410) ([93aa6c4](https://github.com/blakeblackshear/frigate/commit/93aa6c41740e8bc002b847665e3d80de6b900a86))
+- back off restarts when a recording stream goes stale (#24420) ([ac9ac50](https://github.com/blakeblackshear/frigate/commit/ac9ac50df55f66346baa011a630932e8d0cc5ae8))
+- Update keywords used in docs to match UI (#24436) ([bbc4127](https://github.com/blakeblackshear/frigate/commit/bbc412763d959b0cd0a1e8cb815f729c6a2b7919))
+- use resolved camera config in object processor to avoid race on replay stop (#24450) ([9d0d8a9](https://github.com/blakeblackshear/frigate/commit/9d0d8a99bb0d51c66366bac54a67538b172abd70))
+- Fix ffmpeg default record preset in reference config (#24451) ([1a27863](https://github.com/blakeblackshear/frigate/commit/1a278630da0577fe6354008ae30239ac431ef47c))
+- add note to mqtt docs to use ID rather than friendly_name (#24441) ([3941355](https://github.com/blakeblackshear/frigate/commit/3941355051575097b87d4cc9e60f50e87b62ec7a))
+- Tweaks (#24484) ([4e19651](https://github.com/blakeblackshear/frigate/commit/4e196516dd755b6b82e5d7732f22a86ee8bc4866))
+- Detail XDNA2 community detector (#24480) ([61e50a3](https://github.com/blakeblackshear/frigate/commit/61e50a366f3910dc11fce3066fb203edab5b0f4f))
+- delete timeline entries when expiring events without clips (#24510) ([e37041c](https://github.com/blakeblackshear/frigate/commit/e37041c879e150012cf8892ec0ee2f137998a6b1))
+- Apply data check to all cases when validating a segment (#24515) ([b749b0b](https://github.com/blakeblackshear/frigate/commit/b749b0bbc5498f00ba5293d01be1d458d7acb9bd))
+- Add frigate-abr to third party extensions (#24526) ([160d213](https://github.com/blakeblackshear/frigate/commit/160d2130255494ac75fce1a15222f9815c7d5f36))
+- Fix camera name collision bypassing admin check (#24516) ([17a8efa](https://github.com/blakeblackshear/frigate/commit/17a8efa09cc8f481f595917df58a8043b83e9306))
+- Fix record status stuck offline after ffmpeg restart (#24522) ([321e78e](https://github.com/blakeblackshear/frigate/commit/321e78e65b95af4dafb5828983e1e406ebcc2fd5))
+- Merge remote-tracking branch 'origin/master' into dev ([9b02a07](https://github.com/blakeblackshear/frigate/commit/9b02a077e92045383680975886519a00fc3c18a8))
+
 ### d1cb839-aac1
 
 - Track Frigate dev branch commit [d1cb839](https://github.com/blakeblackshear/frigate/commit/d1cb8395eabe0433cbff960e1316bbfcf3856d7f)
