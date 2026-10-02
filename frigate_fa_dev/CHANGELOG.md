@@ -1,3 +1,16 @@
+### 9b2839f-aac1
+
+- Track Frigate dev branch commit [9b2839f](https://github.com/blakeblackshear/frigate/commit/9b2839f4fb7f43b2fa00313cf815fe4b4a0a1113)
+- Retains JoeyGE0 custom go2rtc overlay (ISAPI AAC talk) via Dockerfile
+
+- GHCR image `ghcr.io/blakeblackshear/frigate:9b2839f` is available
+
+#### Changes (3 commit(s))
+
+- Refactor camera status caching (#24544) ([f372369](https://github.com/blakeblackshear/frigate/commit/f3723698cdb002311b0deb7dcb76a7b910a530a6))
+- retry and report Frigate+ connection failures at startup (#24545) ([c06bf97](https://github.com/blakeblackshear/frigate/commit/c06bf97b5e2d3159ae4ff24e0eb03e29037d6411))
+- Fix go2rtc missing from process stats after a restart (#24546) ([9b2839f](https://github.com/blakeblackshear/frigate/commit/9b2839f4fb7f43b2fa00313cf815fe4b4a0a1113))
+
 ### 38b87fe-aac1
 
 - Track Frigate dev branch commit [38b87fe](https://github.com/blakeblackshear/frigate/commit/38b87feece4894d89675dd299589d849a7f946db)
